@@ -1,0 +1,41 @@
+.sidebar {
+   
+    background-color: #224273;
+    
+    direction: rtl; 
+   
+  }
+  
+  /* Class to show the sidebar */
+  .sidebar.active {
+    right: 0; /* Move into view */
+  }
+  
+  /* Additional styles for sidebar links */
+  .nav-item a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px; /* Adjust padding as needed */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
+  }
+  
+  .sidebar .nav-section {
+    padding: 10px 15px; /* Padding for section headers */
+    color: #fff; /* Section header color */
+  }
+  
+  /* Collapse/Expand caret styling */
+  .caret {
+    margin-left: auto; /* Align caret to the right */
+    transition: transform 0.3s;
+  }
+  
+  .collapse.show + .caret {
+    transform: rotate(90deg); /* Rotate caret when expanded */
+  }
+  
