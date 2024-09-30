@@ -2665,7 +2665,7 @@ body[data-background-color=dark] .border-top {
 .card-light .card-header {
    padding: 1rem 1.25rem;
    background-color: transparent;
-   border-bottom: 1px solid #ebecec !important
+   border-bottom: none
 }
 
 .card .card-header:first-child,
