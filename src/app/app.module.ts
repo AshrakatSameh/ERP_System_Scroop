@@ -3,13 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
 import { RegisterComponent } from './components/register/register.component';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
 import { LoginComponent } from './components/login/login.component';
-=======
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 // Translation imports
 
@@ -18,21 +15,16 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient} from '@angular/common/http';
 import { StaffComponent } from './components/staff/staff.component';
 import { JobsComponent } from './components/jobs/jobs.component'
->>>>>>> 2aad62773b41f1ffdad415820e6438e24c5b4fe6
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     RegisterComponent,
     ForgetPasswordComponent,
     SidebarComponent,
-    LoginComponent
-=======
-    SidebarComponent,
+    LoginComponent,
     StaffComponent,
     JobsComponent
->>>>>>> 2aad62773b41f1ffdad415820e6438e24c5b4fe6
   ],
   imports: [
     BrowserModule,

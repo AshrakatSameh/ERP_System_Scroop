@@ -121,8 +121,10 @@ h2 {
 }
 
 .input-1 {
+    
     text-align: right;
     width: 202px;
+    height: 35px;
     outline-color: #007bff;
     border: 2px solid #E7E7EA;
     border-radius: 6px;
@@ -196,4 +198,34 @@ button {
 
 .bttn:active {
     background-color: #224273;
+}
+
+@media (max-width: 768px) {
+    .shade {
+        margin-top: 10%;
+        width: 100%;
+    }
+
+    .shade-roll {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .login-form-1,
+    .login-form-2 {
+        height: 100%;
+        padding: 2%;
+    }
+
+    .input-1 {
+        width: 100%;
+    }
+
+    h2,
+    .blog-3,
+    .blog-4,
+    .bttn {
+        
+        text-align: center;
+    }
 }
