@@ -11,18 +11,24 @@ import {TranslateModule, TranslateLoader} from "@ngx-translate/core";
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient} from '@angular/common/http';
 import { StaffComponent } from './components/staff/staff.component';
-import { JobsComponent } from './components/jobs/jobs.component'
+import { JobsComponent } from './components/jobs/jobs.component';
+import { ReceivedCovenantComponent } from './components/staff/received-covenant/received-covenant.component'
+import { RouterModule } from '@angular/router';
+import { SectionsComponent } from './components/staff/sections/sections.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     StaffComponent,
-    JobsComponent
+    JobsComponent,
+    ReceivedCovenantComponent,
+    SectionsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule
     // TranslateModule.forRoot({
     //   defaultLanguage: 'ar',
 

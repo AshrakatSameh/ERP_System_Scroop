@@ -5315,7 +5315,7 @@ label.error {
 }
 
 .navbar-nav.page-navigation.page-navigation-danger .nav-item .nav-link:hover {
-   color: #f25961 !important
+   color: #4875A9 !important
 }
 
 .navbar-nav.page-navigation.page-navigation-info .nav-item.active .nav-link {
@@ -5415,17 +5415,17 @@ label.error {
 
 .navbar-header:not([data-background-color]) .navbar-line .navbar-nav.page-navigation .active .nav-link,
 .navbar-header[data-background-color=white] .navbar-line .navbar-nav.page-navigation .active .nav-link {
-   color: #666
+   color: #F7FBFF
 }
 
 .navbar-header:not([data-background-color]) .navbar-line .navbar-nav.page-navigation .nav-item:not(.active) .nav-link,
 .navbar-header[data-background-color=white] .navbar-line .navbar-nav.page-navigation .nav-item:not(.active) .nav-link {
-   color: #9ea2ad !important
+   color: #F7FBFF !important
 }
 
 .navbar-header:not([data-background-color]) .navbar-line .navbar-nav.page-navigation .nav-item:not(.active) .nav-link:hover,
 .navbar-header[data-background-color=white] .navbar-line .navbar-nav.page-navigation .nav-item:not(.active) .nav-link:hover {
-   color: #666 !important
+   color: #F7FBFF !important
 }
 
 .nav-search .input-group {
