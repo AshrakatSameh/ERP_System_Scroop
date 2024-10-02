@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
-import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { LoginComponent } from './components/login/login.component';
 
 // Translation imports
@@ -14,17 +14,19 @@ import {TranslateModule, TranslateLoader} from "@ngx-translate/core";
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient} from '@angular/common/http';
 import { StaffComponent } from './components/staff/staff.component';
-import { JobsComponent } from './components/jobs/jobs.component'
+import { JobsComponent } from './components/jobs/jobs.component';
+import { SalesComponent } from './components/sales/sales.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     ForgetPasswordComponent,
-    SidebarComponent,
     LoginComponent,
     StaffComponent,
-    JobsComponent
+    JobsComponent,
+    SalesComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
