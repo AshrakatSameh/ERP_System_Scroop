@@ -3,7 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { LoginComponent } from './components/login/login.component';
 
 // Translation imports
 
@@ -15,15 +18,20 @@ import { JobsComponent } from './components/jobs/jobs.component';
 import { ReceivedCovenantComponent } from './components/staff/received-covenant/received-covenant.component'
 import { RouterModule } from '@angular/router';
 import { SectionsComponent } from './components/staff/sections/sections.component';
+import { SalesComponent } from './components/sales/sales.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
+    RegisterComponent,
+    ForgetPasswordComponent,
+    LoginComponent,
     StaffComponent,
     JobsComponent,
     ReceivedCovenantComponent,
-    SectionsComponent
+    SectionsComponent,
+    SalesComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

@@ -83,6 +83,7 @@ success-color : #35cd3a
 warning-color : #ffa534
 danger-color : #f3545d
 
+
 -------------------------------------------------------------------*/
 .alert,
 .brand,
@@ -955,7 +956,23 @@ body {
 .sidebar .nav>.nav-item a,
 .sidebar[data-background-color=white] .nav>.nav-item a {
    display: flex;
+   flex-direction: row;
    align-items: center;
+   color: #f7fbff;
+   padding: 6px 25px;
+   width: 100%;
+   font-size: 1rem;
+   margin-left: 1px;
+   font-weight: 400;
+   /* position: relative; */
+   margin-bottom: 3px;
+   text-decoration: none !important;
+   flex-direction: row-reverse;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   /* display: flex;
+   align-items: center;
+   justify-content: space-between;
    color: #575962;
    padding: 6px 25px;
    width: 100%;
@@ -963,7 +980,7 @@ body {
    font-weight: 400;
    position: relative;
    margin-bottom: 3px;
-   text-decoration: none !important
+   text-decoration: none !important */
 }
 
 .sidebar .nav>.nav-item a:focus,
@@ -977,7 +994,7 @@ body {
 .sidebar .nav>.nav-item a:hover p,
 .sidebar[data-background-color=white] .nav>.nav-item a:focus p,
 .sidebar[data-background-color=white] .nav>.nav-item a:hover p {
-   color: #575962 !important;
+   color: #224273 !important;
    font-weight: 600
 }
 
@@ -985,12 +1002,12 @@ body {
 .sidebar .nav>.nav-item a:hover i,
 .sidebar[data-background-color=white] .nav>.nav-item a:focus i,
 .sidebar[data-background-color=white] .nav>.nav-item a:hover i {
-   color: #4d7cfe !important
+   color: #224273 !important
 }
 
 .sidebar .nav>.nav-item a .letter-icon,
 .sidebar[data-background-color=white] .nav>.nav-item a .letter-icon {
-   color: #a1a2a6;
+   color: #f7fbff;
    margin-right: 15px;
    width: 25px;
    text-align: center;
@@ -1002,7 +1019,7 @@ body {
 
 .sidebar .nav>.nav-item a i,
 .sidebar[data-background-color=white] .nav>.nav-item a i {
-   color: #8d9498;
+   color: #f7fbff;
    margin-right: 15px;
    width: 25px;
    text-align: center;
@@ -1028,8 +1045,8 @@ body {
 
 .sidebar .nav>.nav-item a .caret,
 .sidebar[data-background-color=white] .nav>.nav-item a .caret {
-   margin-left: auto;
-   margin-right: 6px;
+   margin-left: 15px;
+   /* margin-right: 6px; */
    transition: all .5s;
    color: #8d9498
 }
@@ -1066,7 +1083,7 @@ body {
 .sidebar[data-background-color=white] .nav.nav-primary>.nav-item a:focus i,
 .sidebar[data-background-color=white] .nav.nav-primary>.nav-item a:hover i,
 .sidebar[data-background-color=white] .nav.nav-primary>.nav-item a[data-toggle=collapse][aria-expanded=true] i {
-   color: #1572e8 !important
+   color: #224273 !important
 }
 
 .sidebar .nav.nav-primary>.nav-item a[data-toggle=collapse][aria-expanded=true]:before,
@@ -1095,7 +1112,7 @@ body {
 .sidebar[data-background-color=white] .nav.nav-secondary>.nav-item a:focus i,
 .sidebar[data-background-color=white] .nav.nav-secondary>.nav-item a:hover i,
 .sidebar[data-background-color=white] .nav.nav-secondary>.nav-item a[data-toggle=collapse][aria-expanded=true] i {
-   color: #6861ce !important
+   color: #224273 !important
 }
 
 .sidebar .nav.nav-secondary>.nav-item a[data-toggle=collapse][aria-expanded=true]:before,
@@ -1115,7 +1132,7 @@ body {
 
 .sidebar .nav.nav-secondary>.nav-item .nav-collapse li.active>a,
 .sidebar[data-background-color=white] .nav.nav-secondary>.nav-item .nav-collapse li.active>a {
-   color: #6861ce !important
+   color: #224273 !important
 }
 
 .sidebar .nav.nav-info>.nav-item a:focus i,
@@ -1360,7 +1377,7 @@ body {
 .sidebar[data-background-color=dark] .nav .nav-item.submenu,
 .sidebar[data-background-color=dark] .nav .nav-item>a:focus,
 .sidebar[data-background-color=dark] .nav .nav-item>a:hover {
-   background: rgba(0, 0, 0, .16)
+   background: #f7fbff;
 }
 
 .sidebar[data-background-color=dark2] .nav .nav-item.submenu>a,
@@ -1484,7 +1501,7 @@ body {
 .sidebar.sidebar-style-2 .nav .nav-item a:focus,
 .sidebar.sidebar-style-2 .nav .nav-item a:hover,
 .sidebar.sidebar-style-2 .nav .nav-item a[data-toggle=collapse][aria-expanded=true] {
-   background: rgba(199, 199, 199, .2)
+   background: 224273
 }
 
 .sidebar.sidebar-style-2 .nav .nav-item a:focus i,
@@ -1493,7 +1510,7 @@ body {
 .sidebar.sidebar-style-2 .nav .nav-item a:hover p,
 .sidebar.sidebar-style-2 .nav .nav-item a[data-toggle=collapse][aria-expanded=true] i,
 .sidebar.sidebar-style-2 .nav .nav-item a[data-toggle=collapse][aria-expanded=true] p {
-   color: #575962 !important
+   color: #224273 !important
 }
 
 .sidebar.sidebar-style-2 .nav .nav-item.active a:before {
@@ -1649,7 +1666,7 @@ body {
 .sidebar.sidebar-style-2[data-background-color=dark] .nav .nav-item a:hover p,
 .sidebar.sidebar-style-2[data-background-color=dark] .nav .nav-item a[data-toggle=collapse][aria-expanded=true] i,
 .sidebar.sidebar-style-2[data-background-color=dark] .nav .nav-item a[data-toggle=collapse][aria-expanded=true] p {
-   color: #b9babf !important
+   color: #224273 !important
 }
 
 .sidebar.sidebar-style-2[data-background-color=dark2] .nav .nav-item.active a,
@@ -2251,7 +2268,7 @@ body[data-background-color=dark] .border-top {
 }
 
 .sidebar[data-background-color=dark] {
-   background: #1a2035 !important
+   background: #224273 !important
 }
 
 .sidebar[data-background-color=dark] .user {
@@ -2273,13 +2290,13 @@ body[data-background-color=dark] .border-top {
 }
 
 .sidebar[data-background-color=dark] .nav>.nav-item a {
-   color: #b9babf !important
+   color: #f7fbff !important
 }
 
 .sidebar[data-background-color=dark] .nav>.nav-item a:focus p,
 .sidebar[data-background-color=dark] .nav>.nav-item a:hover p,
 .sidebar[data-background-color=dark] .nav>.nav-item a[data-toggle=collapse][aria-expanded=true] p {
-   color: #b9babf !important
+   color: #224273 !important
 }
 
 .sidebar[data-background-color=dark].sidebar-style-2 .nav .nav-item.active>a,
@@ -2333,11 +2350,11 @@ body[data-background-color=dark] .border-top {
 .sidebar[data-background-color=dark2] .nav>.nav-item.active a:focus p,
 .sidebar[data-background-color=dark2] .nav>.nav-item.active a:hover p,
 .sidebar[data-background-color=dark2] .nav>.nav-item.active>a p {
-   color: #fff !important
+   color: #f7fbff !important
 }
 
 .sidebar[data-background-color=dark2] .nav>.nav-item a {
-   color: #b9babf !important
+   color: #f7fbff !important
 }
 
 .sidebar[data-background-color=dark2] .nav>.nav-item a:focus p,
