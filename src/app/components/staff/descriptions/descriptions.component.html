@@ -15,7 +15,7 @@
                 </a>
               </li>
               <li class="separator">
-                <!-- <i class="icon-arrow-right"></i> -->
+                <i class="icon-arrow-right"></i>
               </li>
               <li class="nav-item">
                 <a href="#">
@@ -23,7 +23,7 @@
                 </a>
               </li>
               <li class="separator">
-                <!-- <i class="icon-arrow-right"></i> -->
+                <i class="icon-arrow-right"></i>
               </li>
               <li class="nav-item">
                 <i class="fa-solid fa-gear"></i>
@@ -37,10 +37,10 @@
                 <div
                   class="card-header d-flex justify-content-between align-items-center flex-row-reverse"
                 >
-                  <h4 class="card-title text-end">العهد المستلمة</h4>
+                  <h4 class="card-title text-end">الوصف الوظيفي </h4>
                   <div class="button-group d-flex justify-content-start">
                     <button type="button" class="btn my-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                      اضف عهد المستلمة
+                      اضف وصف وظيفي
                       <i class="fa-solid fa-plus"></i>
                     </button>
                     <button type="button" class="btn ms-3 my-button2">
@@ -64,27 +64,22 @@
                     </select>
                   </div>
   
-                  <div class="d-flex align-items-center flex-row-reverse">
-                    <!-- Button with icon -->
-                    <button class="btn my-custom-icone me-2">
-                      <span class="btn-label">
-                        <i class="fa-solid fa-sliders"></i>
-                      </span>
-                    </button>
-                  
-                    <!-- Search form -->
-                    <form class="d-flex position-relative">
-                      <input
-                        class="form-control text-end search-input"
-                        type="search"
-                        placeholder="بحث في الكل"
-                        aria-label="Search"
-                      />
-                      <i class="fs-4 bi-search position-absolute search-icon"></i>
-                    </form>
-                  </div>
-                  
-
+                  <button class="btn  my-custom-icone">
+                    <span class="btn-label">
+                      <i class="fa-solid fa-sliders"></i>
+                     </span>
+                   
+                  </button>
+  
+                  <form class="d-flex position-relative me-2" >
+                    <input
+                      class="form-control text-end search-input"
+                      type="search"
+                      placeholder="بحث في الكل"
+                      aria-label="Search"
+                    />
+                    <i class="fs-4 bi-search position-absolute search-icon"></i>
+                  </form>
                   <div class="icon-group d-flex align-items-center">
   
                     <button class="btn  my-custom-icone">
@@ -121,11 +116,11 @@
                     >
                       <thead>
                         <tr class="firstcol">
-                          <th class="firstcolleft">مدير القسم</th>
-                          <th>مشرف القسم</th>
-                          <th>المهنة</th>
-                          <th>اسم الموظف باللغه المحلية</th>
-                          <th>اسم الموظف بالعربي</th>
+                          <th class="firstcolleft"> كود الوصف الوظيفي</th>
+                          <th> المنشأ</th>
+                          <th>تاريخ انشاء</th>
+                          <th>اسم الوصف الوظيفي باللغه المحلية</th>
+                          <th>اسم الوصف الوظيفي</th>
                           <th class="firstcolright">
                             <input type="checkbox" class="large-checkbox" />
                           </th>
@@ -168,7 +163,7 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-end flex-row-reverse" id="staticBackdropLabel">اضافه عهده مستلمه 
+        <h5 class="modal-title text-end flex-row-reverse" id="staticBackdropLabel">انشاء وصف وظيفي 
           
         </h5>
       </div>
@@ -180,13 +175,13 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field1 text-end"> اسم العهده</label>
+                  <label for="field1 text-end"> اسم الوصف الوظيفي</label>
                   <input type="text" id="field1" formControlName="field1" class="form-control" placeholder="اسم الموظف" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field2 text-end">اسم العهده باللغه المحليه </label>
+                  <label for="field2 text-end">اسم الوصف الوظيفي باللغه المحليه </label>
                   <input type="text" id="field2" formControlName="field2" class="form-control" placeholder="Employee" />
                 </div>
               </div>
@@ -211,54 +206,22 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field4"> الموظف المستلم </label>
+                  <label for="field4">  كود الوصف الوظيفي </label>
                   <input type="text" id="field4" formControlName="field4" class="form-control" />
                 </div>
               </div>
             
             </div>
 
-            <div class="row">
-
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field1 text-end">  تاريخ نهايه استلام العهده</label>
-                  <input type="text" id="field1" formControlName="field1" class="form-control" placeholder="اسم الموظف" />
-                </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="field5">تاريخ بدايه استلام العهده</label>
-                    <input type="text" id="field5" formControlName="field5" class="form-control" />
-                  </div>
-                </div>
-              </div>
+       
              
         
 
-            <div class="row">
-
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field1 text-end">المعده</label>
-                  <input type="text" id="field1" formControlName="field1" class="form-control" placeholder="اسم الموظف" />
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field2 text-end">  نوع العهده</label>
-                  <input type="text" id="field2" formControlName="field2" class="form-control" placeholder="Employee" />
-                </div>
-              </div>
-             
-            </div>
 
             <div class="row mb-4">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label for="floatingTextarea2">وصف القسم</label>
+                  <label for="floatingTextarea2">وصف الوصف الوظيفي</label>
 
                   <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                 </div>

@@ -6,7 +6,9 @@
     <!-- Main content section -->
     <div class="container">
       <div class="page-inner">
-        <div class="page-header d-flex justify-content-between align-items-center flex-row-reverse">
+        <div
+          class="page-header d-flex justify-content-between align-items-center flex-row-reverse"
+        >
           <h3 class="fw-bold mb-3 text-end">ادارة الموظفين</h3>
           <ul class="breadcrumbs mb-3">
             <li class="nav-home">
@@ -15,7 +17,7 @@
               </a>
             </li>
             <li class="separator">
-              <i class="icon-arrow-right"></i>
+              <!-- <i class="icon-arrow-right"></i> -->
             </li>
             <li class="nav-item">
               <a href="#">
@@ -23,7 +25,7 @@
               </a>
             </li>
             <li class="separator">
-              <i class="icon-arrow-right"></i>
+              <!-- <i class="icon-arrow-right"></i> -->
             </li>
             <li class="nav-item">
               <i class="fa-solid fa-gear"></i>
@@ -39,7 +41,12 @@
               >
                 <h4 class="card-title text-end">الموظفين</h4>
                 <div class="button-group d-flex justify-content-start">
-                  <button type="button" class="btn my-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <button
+                    type="button"
+                    class="btn my-button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
                     اضافه موظف
                     <i class="fa-solid fa-plus"></i>
                   </button>
@@ -54,24 +61,28 @@
                 </div>
               </div>
 
-              <div class="d-flex flex-row align-items-center mt-3 d-flex justify-content-between align-items-center flex-row-reverse">
-                <div class="mb-2 me-2 " style="width:100px">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected> الاحدث</option>
+              <div
+                class="d-flex flex-row align-items-center mt-3 d-flex justify-content-between align-items-center flex-row-reverse"
+              >
+                <div class="mb-2 me-2" style="width: 100px">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>الاحدث</option>
                     <option value="1">خيار 1</option>
                     <option value="2">خيار 2</option>
                     <option value="3">خيار 3</option>
                   </select>
                 </div>
 
-                <button class="btn  my-custom-icone">
+                <button class="btn my-custom-icone">
                   <span class="btn-label">
                     <i class="fa-solid fa-sliders"></i>
-                   </span>
-                 
+                  </span>
                 </button>
 
-                <form class="d-flex position-relative me-2" >
+                <form class="d-flex position-relative me-2">
                   <input
                     class="form-control text-end search-input"
                     type="search"
@@ -81,32 +92,28 @@
                   <i class="fs-4 bi-search position-absolute search-icon"></i>
                 </form>
                 <div class="icon-group d-flex align-items-center">
-
-                  <button class="btn  my-custom-icone">
+                  <button class="btn my-custom-icone">
                     <span class="btn-label">
                       <i class="fa-solid fa-table-cells-large"></i>
-                     </span>
-                   
+                    </span>
                   </button>
 
-                  <button class="btn  my-custom-icone" style="background-color: #224273; color:#E7E7EA">
+                  <button
+                    class="btn my-custom-icone"
+                    style="background-color: #224273; color: #e7e7ea"
+                  >
                     <span class="btn-label">
                       <i class="fa-solid fa-list-ul"></i>
-                     </span>
-                   
+                    </span>
                   </button>
 
-                  <button class="btn  my-custom-icone ">
+                  <button class="btn my-custom-icone">
                     <span class="btn-label">
-                      <i class="fa-solid fa-bag-shopping my-icone "></i>
-                     </span>
-                   
+                      <i class="fa-solid fa-bag-shopping my-icone"></i>
+                    </span>
                   </button>
-
-                  
                 </div>
               </div>
-              
 
               <div class="card-body">
                 <div class="table-responsive">
@@ -147,7 +154,6 @@
                   </table>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
@@ -156,33 +162,55 @@
   </div>
 </div>
 
-
-
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-end flex-row-reverse" id="staticBackdropLabel">اضف موظف
-          
+        <h5
+          class="modal-title text-end flex-row-reverse"
+          id="staticBackdropLabel"
+        >
+          اضف موظف
         </h5>
       </div>
       <div class="modal-body">
-       
-        <form >
+        <form>
           <div class="container">
             <!-- Row with two fields -->
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="field1 text-end"> اسم الموظف</label>
-                  <input type="text" id="field1" formControlName="field1" class="form-control" placeholder="اسم الموظف" />
+                  <input
+                    type="text"
+                    id="field1"
+                    formControlName="field1"
+                    class="form-control"
+                    placeholder="اسم الموظف"
+                  />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field2 text-end">اسم الموظف باللغه المحليه </label>
-                  <input type="text" id="field2" formControlName="field2" class="form-control" placeholder="Employee" />
+                  <label for="field2 text-end"
+                    >اسم الموظف باللغه المحليه
+                  </label>
+                  <input
+                    type="text"
+                    id="field2"
+                    formControlName="field2"
+                    class="form-control"
+                    placeholder="Employee"
+                  />
                 </div>
               </div>
             </div>
@@ -191,107 +219,317 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <label for="field1 text-end"> المهنه / الوظيفه </label>
-                  <input type="text" id="field1" formControlName="field1" class="form-control" placeholder="اسم الموظف" />
+                  <input
+                    type="text"
+                    id="field1"
+                    formControlName="field1"
+                    class="form-control"
+                    placeholder="اسم الموظف"
+                  />
                 </div>
               </div>
             </div>
-        
+
             <!-- Row with three fields -->
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
                   <label for="field3">مشرف القسم</label>
-                  <input type="text" id="field3" formControlName="field3" class="form-control" />
+                  <input
+                    type="text"
+                    id="field3"
+                    formControlName="field3"
+                    class="form-control"
+                  />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
                   <label for="field4">مدير القسم</label>
-                  <input type="text" id="field4" formControlName="field4" class="form-control" />
+                  <input
+                    type="text"
+                    id="field4"
+                    formControlName="field4"
+                    class="form-control"
+                  />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
                   <label for="field5">القسم</label>
-                  <input type="text" id="field5" formControlName="field5" class="form-control" />
+                  <input
+                    type="text"
+                    id="field5"
+                    formControlName="field5"
+                    class="form-control"
+                  />
                 </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field1 text-end"> رقم الجواز</label>
-                  <input type="text" id="field1" formControlName="field1" class="form-control" placeholder="اسم الموظف" />
+            <div class="scroll-buttons-container">
+              <button
+                *ngFor="let btn of buttons; let i = index"
+                [id]="'button-' + i"
+                class="scroll-button"
+                type="button"
+                (click)="showContent(i)"
+              >
+                {{ btn }}
+              </button>
+            </div>
+
+            <!-- show personal information  -->
+
+            <div *ngIf="selectedButton !== null">
+              <div *ngIf="selectedButton === 0">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> رقم الجواز</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end">تاريخ انتهاء الجواز</label>
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field2 text-end">تاريخ انتهاء الجواز</label>
-                  <input type="text" id="field2" formControlName="field2" class="form-control" placeholder="Employee" />
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> رقم رخصه السواقه</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end">
+                        تاريخ انتهاء رخصه السواقه</label
+                      >
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> الجنسيه</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end">النوع</label>
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> رقم الحدود</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end"> موقع سكن الموظف </label>
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field1 text-end">  رقم رخصه السواقه</label>
-                  <input type="text" id="field1" formControlName="field1" class="form-control" placeholder="اسم الموظف" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field2 text-end"> تاريخ انتهاء رخصه السواقه</label>
-                  <input type="text" id="field2" formControlName="field2" class="form-control" placeholder="Employee" />
-                </div>
-              </div>
-            </div>
+            <!-- show user information  -->
 
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field1 text-end">  الجنسيه</label>
-                  <input type="text" id="field1" formControlName="field1" class="form-control" placeholder="اسم الموظف" />
+            <!-- <div *ngIf="selectedButton !== null">
+              <div *ngIf="selectedButton === 1">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end">  اسم المستخدم</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end">  رقم الجوال</label>
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field2 text-end">النوع</label>
-                  <input type="text" id="field2" formControlName="field2" class="form-control" placeholder="Employee" />
-                </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field1 text-end">  رقم الحدود</label>
-                  <input type="text" id="field1" formControlName="field1" class="form-control" placeholder="اسم الموظف" />
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> رقم رخصه السواقه</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end">
+                        تاريخ انتهاء رخصه السواقه</label
+                      >
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> الجنسيه</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end">النوع</label>
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> رقم الحدود</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end"> موقع سكن الموظف </label>
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field2 text-end"> موقع سكن الموظف </label>
-                  <input type="text" id="field2" formControlName="field2" class="form-control" placeholder="Employee" />
-                </div>
-              </div>
-            </div>
-        
-            <button type="button" class="btn closebutton" data-bs-dismiss="modal">الغاء</button>
-            <button type="button" class="btn my-button">اضافه
+            </div> -->
+
+
+
+
+
+
+            <button
+              type="button"
+              class="btn closebutton"
+              data-bs-dismiss="modal"
+            >
+              الغاء
+            </button>
+            <button type="button" class="btn my-button">
+              اضافه
               <i class="fa-solid fa-plus"></i>
             </button>
-
           </div>
         </form>
-        
-        
-
-
       </div>
-
-  
     </div>
   </div>
 </div>
