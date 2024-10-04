@@ -108,6 +108,22 @@
   
   }
   
+  /* font */
+  h2,
+  h3,
+a,
+h4,
+p,
+label,
+input,
+button,
+tr, th, tr {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
   
   
    

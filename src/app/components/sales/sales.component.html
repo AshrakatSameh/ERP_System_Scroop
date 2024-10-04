@@ -546,7 +546,7 @@
             </button> -->
 
 
-            <!-- show table -->
+            <!-- show table button 1 -->
             <div *ngIf="selectedButton !== null">
               <div *ngIf="selectedButton === 0">
             <div class="card-body">
@@ -687,6 +687,54 @@
             اضافه
             <i class="fa-solid fa-plus"></i>
           </button>
+            </div>
+          </div>
+
+          <!-- shoe table button 3 -->
+          <div *ngIf="selectedButton === 2">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table
+                  id="basic-datatables"
+                  class="display table table-striped table-hover"
+                >
+                  <thead>
+                    <tr class="firstcol">
+                      <!-- <th class="firstcolleft"> </th> -->
+                      <th>موكل الى</th>
+                      <th> الاولويه</th>
+                      <th>التاريخ</th>
+                      <th>الحاله</th>
+                      <th>المهمه</th>
+                    
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                     
+                      <td>موكل الى</td>
+                      <td> الاولويه</td>
+                      <td>التاريخ</td>
+                      <td>الحاله</td>
+                      <td>المهمه</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-6 mx-auto ">
+                <button
+              type="button"
+              class="btn closebutton "
+              data-bs-dismiss="modal"
+            >
+              الغاء
+            </button>
+            <button type="button" class="btn my-button3">
+              اضافه
+              <i class="fa-solid fa-plus"></i>
+            </button>
+              </div>
             </div>
           </div>
         </div>
