@@ -223,7 +223,7 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field1 text-end"> رقم الطلب</label>
+                  <label for="field4 text-end"> رقم الطلب</label>
                   <input
                     type="text"
                     id="field3"
@@ -235,7 +235,7 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field2 text-end"
+                  <label for="field4 text-end"
                     >تاريخ الانشاء
                   </label>
                   <input
@@ -293,13 +293,70 @@
             </div>
 
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field1 text-end"> المهنه / الوظيفه </label>
+                  <label for="field8 text-end"> حالة الطلب</label>
                   <input
                     type="text"
-                    id="field1"
-                    formControlName="field1"
+                    id="field8"
+                    formControlName="field8"
+                    class="form-control"
+                    placeholder="قم باختيار حالة الطلب"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field9 text-end"
+                    >مركز التكلفة
+                  </label>
+                  <input
+                    type="text"
+                    id="field9"
+                    formControlName="field9"
+                    class="form-control"
+                    placeholder="قم باختيار مركز التكلفة"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field10 text-end"> مراحل الطلب</label>
+                  <input
+                    type="text"
+                    id="field10"
+                    formControlName="field10"
+                    class="form-control"
+                    placeholder="قم باختيار مراحل الطلب"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field11 text-end"
+                    >عرض اسعار
+                  </label>
+                  <input
+                    type="text"
+                    id="field11"
+                    formControlName="field11"
+                    class="form-control"
+                    placeholder="قم باختيار عرض اسعار"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="field12 text-end"> المستودع </label>
+                  <input
+                    type="text"
+                    id="field12"
+                    formControlName="field12"
                     class="form-control"
                     placeholder="اسم الموظف"
                   />
@@ -311,34 +368,37 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <label for="field3">مشرف القسم</label>
+                  <label for="field13">تاريخ انتهاء العرض</label>
                   <input
-                    type="text"
-                    id="field3"
-                    formControlName="field3"
+                    type="date"
+                    id="field13"
+                    formControlName="field13"
                     class="form-control"
+                    placeholder="قم باختيار التاريخ"
                   />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label for="field4">مدير القسم</label>
+                  <label for="field14">فترة الدفع</label>
                   <input
                     type="text"
-                    id="field4"
-                    formControlName="field4"
+                    id="field14"
+                    formControlName="field14"
                     class="form-control"
+                    placeholder="قم باختيار فترة الدفع"
                   />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label for="field5">القسم</label>
+                  <label for="field15">نوع العرض</label>
                   <input
                     type="text"
-                    id="field5"
-                    formControlName="field5"
+                    id="field15"
+                    formControlName="field15"
                     class="form-control"
+                    placeholder="قم باختيار كاش/اجل"
                   />
                 </div>
               </div>
@@ -356,9 +416,9 @@
               </button>
             </div>
 
-            <!-- show personal information  -->
+            <!-- show Basic information  -->
 
-            <div *ngIf="selectedButton !== null">
+            <!-- <div *ngIf="selectedButton !== null">
               <div *ngIf="selectedButton === 0">
                 <div class="row">
                   <div class="col-md-6">
@@ -470,20 +530,168 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
 
-            <button
+            <!-- <button
               type="button"
               class="btn closebutton"
               data-bs-dismiss="modal"
             >
               الغاء
             </button>
-            <button type="button" class="btn my-button">
+            <button type="button" class="btn my-button3">
+              اضافه
+              <i class="fa-solid fa-plus"></i>
+            </button> -->
+
+
+            <!-- show table -->
+            <div *ngIf="selectedButton !== null">
+              <div *ngIf="selectedButton === 0">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table
+                  id="basic-datatables"
+                  class="display table table-striped table-hover"
+                >
+                  <thead>
+                    <tr class="firstcol">
+                      <th class="firstcolleft"> </th>
+                      <th>اجمالي فرعي</th>
+                      <th>الخصم</th>
+                      <th>الضريبه</th>
+                      <th>سعر الوحدة</th>
+                      <th> الوحدة</th>
+                      <th>الوصف</th>
+                      <th>الصنف</th>
+                      <th>مسلسل</th>
+                    
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i class="fas fa-trash"  style="cursor: pointer;"></i>
+                      </td>
+                        <td>اجمالى فرعي</td>
+                      <td>الخصم</td>
+                      <td>الضريبه</td>
+                      <td>سعر الوحده</td>
+                      <td>الوحده</td>
+                      <td>الوصف</td>
+                     <td>الصنف</td>
+                     <td>1</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-6 mx-auto ">
+                <button
+              type="button"
+              class="btn closebutton "
+              data-bs-dismiss="modal"
+            >
+              الغاء
+            </button>
+            <button type="button" class="btn my-button3">
               اضافه
               <i class="fa-solid fa-plus"></i>
             </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- comments part -->
+          <div *ngIf="selectedButton === 1">
+            <div class="container comment-section mt-5">
+              <div class="card p-3">
+                <!-- Add Comment Section -->
+                <div class="container add-comment-section mt-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="d-flex align-items-center w-100">
+                      <!-- User Avatar -->
+                      <img src="../../../assets/images/images.jpg" class="rounded-circle border border-primary me-2" alt="User Avatar">
+                      
+                      <!-- Comment Input Section -->
+                      <div class="flex-grow-1">
+                        <input type="text" class="form-control" placeholder="أضف تعليقاً">
+                      </div>
+                
+                      <!-- Icons and Post Button -->
+                      <div class="d-flex align-items-center ms-2">
+                        <!-- Voice Icon -->
+                        <button class="btn btn-link text-muted p-1"><i class="fa fa-microphone"></i></button>
+                
+                        <!-- Attachment Icon -->
+                        <button class="btn btn-link text-muted p-1"><i class="fa fa-paperclip"></i></button>
+                
+                        <!-- Post Button -->
+                        <button class="btn btn-primary ms-2 px-4">نشر</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+            
+                <!-- Comments List -->
+                <div class="comments-list mt-4">
+                  <div class="comment-item p-3 mb-3">
+                    <div class="d-flex align-items-start">
+                      <img src="../../../assets/images/images2.jpg" class="rounded-circle" alt="User Avatar">
+                      <div class="ms-3 w-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 class="mb-0">خالد ابراهيم</h6>
+                          <span class="text-muted small">Aug 19, 2021</span>
+                        </div>
+                        <p class="mt-2">المندوبين عندكم ممتازين جداً...</p>
+                        <div class="comment-actions d-flex">
+                          <button class="btn btn-link p-0"><i class="fa fa-heart"></i> 5</button>
+                          <button class="btn btn-link p-0 ms-3"><i class="fa fa-comment"></i> 3</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Nested Reply Comment -->
+                  <div class="comment-item p-3 mb-3 ms-5">
+                    <div class="d-flex align-items-start">
+                      <img src="../../../assets/images/images2.jpg" class="rounded-circle" alt="User Avatar">
+                      <div class="ms-3 w-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 class="mb-0">خالد ابراهيم</h6>
+                          <span class="text-muted small">Aug 19, 2021</span>
+                        </div>
+                        <p class="mt-2">شكراً لك على رأيك الإيجابي...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- View More Comments Link -->
+                <div class="text-center">
+                  <a href="#" class="text-primary">باقي التعليقات</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mx-auto ">
+              <button
+            type="button"
+            class="btn closebutton "
+            data-bs-dismiss="modal"
+          >
+            الغاء
+          </button>
+          <button type="button" class="btn my-button3">
+            اضافه
+            <i class="fa-solid fa-plus"></i>
+          </button>
+            </div>
+          </div>
+        </div>
+
+
           </div>
         </form>
       </div>
