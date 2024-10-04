@@ -6,10 +6,10 @@ import { ReceivedCovenantComponent } from './components/staff/received-covenant/
 import { SectionsComponent } from './components/staff/sections/sections.component';
 import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 import { RegisterComponent } from './components/register/register.component';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { LoginComponent } from './components/login/login.component';
 import { SalesComponent } from './components/sales/sales.component';
 import { DescriptionsComponent } from './components/staff/descriptions/descriptions.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 const routes: Routes = [
   {path:'forgetPassword', component: ForgetPasswordComponent},

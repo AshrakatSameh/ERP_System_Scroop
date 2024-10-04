@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
+
+   // Define the object with string indexing
+   isCollapsed: { [key: string]: boolean } = {
+    salesMovementSub: true,
+    salesManagersSub: true,
+    clientsSub: true,
+    salesReportsSub: true,
+    settingsSub: true,
+  };
   
 
   openSubmenus: { [key: string]: boolean } = {};
@@ -26,5 +35,8 @@ export class SidebarComponent {
     return !!this.openSubmenus[menuId];
   }
   
+  toggleCollapse(section: string) {
+    this.isCollapsed[section] = !this.isCollapsed[section];
+  }
 
 }
