@@ -54,6 +54,12 @@
   cursor: pointer;
 }
 
-/* .no-bullets{
-  list-style-type: none;
-} */
+ul .sub-nav a{
+  transition: color 0.3s ease;
+}
+ul .sub-nav a:hover{
+  color: #224273;
+}
+ul .sub-nav a:active{
+  color: #224273;
+}
