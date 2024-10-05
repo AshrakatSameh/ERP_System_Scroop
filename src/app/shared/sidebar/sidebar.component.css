@@ -25,6 +25,15 @@
   /* background-color: rgba(255, 255, 255, 0.1); Hover effect */
   background-color: #f7fbff;
   color: #224273;
+  border: 1px solid #f7fbff;
+  border-radius: 10px;
+}
+.sub-item2 a:hover {
+  /* background-color: rgba(255, 255, 255, 0.1); Hover effect */
+  background-color: #f7fbff;
+  color: #224273;
+  border: 1px solid #f7fbff;
+  border-radius: 10px;
 }
 
 .sidebar .nav-section {
@@ -79,4 +88,14 @@ tr, th, tr {
     font-weight: 600;
     font-style: normal;
 
+}
+/* for sub-item2 */
+.sidebar .nav-collapse li a:hover .sub-item2,
+.sidebar[data-background-color=white] .nav-collapse li a:hover .sub-item2 {
+   /* opacity: 1 */
+   color: #224273;
+}
+.sub-item2 a:hover, .sub-item2 a:active{
+  background-color: #f7fbff;
+  color: #224273;
 }
