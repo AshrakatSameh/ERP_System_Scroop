@@ -150,22 +150,42 @@
   color:#224273;
   border: 1px solid #224273;
   background-color:#F7fBFF;
+  width: 13rem;
 }
 
-input , textarea{
-  background-color: #E7E7EA;
-  border-radius: 10px;
-}
- 
-input:focus, textarea:focus, select:focus {
-  outline: none; /* Removes the default outline */
-  border-color: initial; /* Resets the border color */
-  background-color: initial; /* Resets the background color */
+/* font */
+h2,
+h3,
+a,
+h4,
+h5,
+p,
+label,
+input,
+button,
+tr, th, tr {
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
 }
 
-input:focus {
-  border-color: #E7E7EA; /* Your custom border color */
-  background-color: #ffff; /* Your custom background color */
+
+.custom-input {
+background-color: #E7E7EA;
+border-radius: 10px;
+}
+
+.custom-input:focus {
+outline: none; /* Removes the default outline */
+border-color: initial; /* Resets the border color */
+background-color: initial; /* Resets the background color */
+}
+
+.custom-input:focus {
+border-color: #E7E7EA; /* Your custom border color */
+background-color: #ffff; /* Your custom background color */
 }
 
 
@@ -173,6 +193,12 @@ input:focus {
   width: 98%;
 }
 
+.my-button3{
+  background-color: #224273;
+  color:#F7fBFF;
+  width: 13rem;
+  margin-left: 3%;
+}
 
 .attachment-upload-container {
   position: relative;
@@ -188,10 +214,10 @@ input:focus {
   right: 10px;
 }
 
-.icons-above i {
-  font-size: 24px;
-  margin-left: 10px;
-  color: #333;
+.icons-right i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #224273;
   cursor: pointer;
 }
 
@@ -215,7 +241,7 @@ input:focus {
   border-radius: 8px;
   cursor: pointer;
   position: relative;
-  height: 120px;
+  height: 100px;
 }
 
 .upload-icon {

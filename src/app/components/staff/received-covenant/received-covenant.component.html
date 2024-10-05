@@ -201,7 +201,7 @@
         <form>
           <div class="container">
             <!-- Row with two fields -->
-            <div class="row flex-row-reverse">
+            <div class="row ">
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="field1 text-end"> اسم العهده</label>
@@ -209,8 +209,8 @@
                     type="text"
                     id="field1"
                     formControlName="field1"
-                    class="form-control"
-                    placeholder="اسم الموظف"
+                    class="form-control custom-input"
+                    placeholder="اسم العهده"
                   />
                 </div>
               </div>
@@ -223,8 +223,8 @@
                     type="text"
                     id="field2"
                     formControlName="field2"
-                    class="form-control"
-                    placeholder="Employee"
+                    class="form-control custom-input"
+                    placeholder="the convenant"
                   />
                 </div>
               </div>
@@ -235,17 +235,17 @@
                 <div class="form-group">
                   <label for="field1 "> تاريخ الانشاء </label>
                   <input
-                    type="text"
-                    id="field1"
-                    formControlName="field1"
-                    class="form-control"
-                    placeholder="اسم الموظف"
-                  />
+                  type="date"
+                  id="field2"
+                  formControlName="field2"
+                  class="form-control custom-input"
+                  placeholder="قم باختيار التاريخ"
+                />
                 </div>
               </div>
             </div>
 
-            <div class="row flex-row-reverse">
+            <div class="row ">
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="field3"> المنشأ</label>
@@ -253,7 +253,8 @@
                     type="text"
                     id="field3"
                     formControlName="field3"
-                    class="form-control"
+                    class="form-control custom-input"
+                    placeholder="اسم العهده"
                   />
                 </div>
               </div>
@@ -264,54 +265,46 @@
                     type="text"
                     id="field4"
                     formControlName="field4"
-                    class="form-control"
+                    class="form-control custom-input"
+                    placeholder="الموظف المستلم"
                   />
                 </div>
               </div>
             </div>
 
             <div class="row">
+           
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field5">تاريخ بدايه استلام العهده</label>
+                  <input
+                    type="date"
+                    id="field2"
+                    formControlName="field2"
+                    class="form-control custom-input"
+                    placeholder="قم باختيار التاريخ"
+                  />
+                </div>
+              </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="field1 text-end">
                     تاريخ نهايه استلام العهده</label
                   >
                   <input
-                    type="text"
-                    id="field1"
-                    formControlName="field1"
-                    class="form-control"
-                    placeholder="اسم الموظف"
-                  />
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field5">تاريخ بدايه استلام العهده</label>
-                  <input
-                    type="text"
-                    id="field5"
-                    formControlName="field5"
-                    class="form-control"
+                    type="date"
+                    id="field2"
+                    formControlName="field2"
+                    class="form-control custom-input"
+                    placeholder="قم باختيار التاريخ"
                   />
                 </div>
               </div>
             </div>
 
             <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field1 text-end">المعده</label>
-                  <input
-                    type="text"
-                    id="field1"
-                    formControlName="field1"
-                    class="form-control"
-                    placeholder="اسم الموظف"
-                  />
-                </div>
-              </div>
+           
 
               <div class="col-md-6">
                 <div class="form-group">
@@ -320,8 +313,22 @@
                     type="text"
                     id="field2"
                     formControlName="field2"
-                    class="form-control"
+                    class="form-control custom-input"
                     placeholder="Employee"
+                    placeholder="قم باختيار نوع العهده"
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field1 text-end">المعده</label>
+                  <input
+                    type="text"
+                    id="field1"
+                    formControlName="field1"
+                    class="form-control custom-input"
+                    placeholder=" قم باختيار المعده"
                   />
                 </div>
               </div>
@@ -370,14 +377,18 @@
                   <label for="floatingTextarea2">وصف القسم</label>
 
                   <textarea
-                    class="form-control"
-                    placeholder="Leave a comment here"
+                    class="form-control custom-input"
+                    placeholder="قم بوصف القسم "
                     id="floatingTextarea2"
                     style="height: 100px"
                   ></textarea>
                 </div>
               </div>
             </div>
+
+            <button type="button my-button3" class="btn my-button3">
+              حفظ
+            </button>
 
             <button
               type="button"
@@ -386,7 +397,7 @@
             >
               الغاء
             </button>
-            <button type="button" class="btn my-button">حفظ</button>
+
           </div>
         </form>
       </div>

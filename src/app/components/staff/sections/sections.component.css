@@ -149,10 +149,54 @@
   color:#224273;
   border: 1px solid #224273;
   background-color:#F7fBFF;
+  width: 13rem;
 }
 
 
  
 .main-panel{
   width: 98%;
+}
+
+ /* font */
+ h2,
+ h3,
+ h5,
+a,
+h4,
+p,
+label,
+input,
+button,
+tr, th, tr {
+   font-family: "Cairo", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 600;
+   font-style: normal;
+
+}
+
+
+.custom-input {
+ background-color: #E7E7EA;
+ border-radius: 10px;
+}
+
+.custom-input:focus {
+ outline: none; /* Removes the default outline */
+ border-color: initial; /* Resets the border color */
+ background-color: initial; /* Resets the background color */
+}
+
+.custom-input:focus {
+ border-color: #E7E7EA; /* Your custom border color */
+ background-color: #ffff; /* Your custom background color */
+}
+
+
+.my-button3{
+  background-color: #224273;
+  color:#F7fBFF;
+  width: 13rem;
+  margin-left: 3%;
 }

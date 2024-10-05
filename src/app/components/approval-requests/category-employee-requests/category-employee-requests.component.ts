@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-category-employee-requests',
@@ -6,12 +6,44 @@ import { Component } from '@angular/core';
   styleUrls: ['./category-employee-requests.component.css']
 })
 export class CategoryEmployeeRequestsComponent {
-  buttons=['المعلومات الشخصية ','معلومات المستخدم','المرفقات','معلومات العمل' ,'الاشعارات','المبيعات','الطلبات و المرفقات','الخطط و المهام','العهد المستلمه','الحساب البنكي']
 
-  selectedButton: number | null = null; // To track which button is clicked
+  @ViewChild('fileInput') fileInput: any; // Reference to file input
+  fileNames: string[] = []; // Variable to store file names
 
-  // Method to handle button click and show content
-  showContent(index: number): void {
-    this.selectedButton = index;
+  onDragOver(event: DragEvent): void {
+    event.preventDefault();
+    event.stopPropagation();
+    const rectangle = event.target as HTMLElement;
+    rectangle.classList.add('dragover');
+  }
+
+  onDragLeave(event: DragEvent): void {
+    event.preventDefault();
+    const rectangle = event.target as HTMLElement;
+    rectangle.classList.remove('dragover');
+  }
+
+  onDrop(event: DragEvent): void {
+    event.preventDefault();
+    event.stopPropagation();
+    
+    const rectangle = event.target as HTMLElement;
+    rectangle.classList.remove('dragover');
+
+    if (event.dataTransfer && event.dataTransfer.files.length > 0) {
+      this.onFileSelected(event.dataTransfer.files);
+    }
+  }
+
+  onFileSelected(files: FileList | any): void {
+    this.fileNames = []; // Clear previous file names
+
+    if (files instanceof FileList) {
+      // If files were selected via the input or dragged
+      for (let i = 0; i < files.length; i++) {
+        this.fileNames.push(files[i].name); // Store the file names
+      }
+    }
+    console.log(this.fileNames); // Log the file names to the console (optional)
   }
 }
