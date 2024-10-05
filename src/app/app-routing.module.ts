@@ -29,7 +29,7 @@ const routes: Routes = [
   {path:'description',component:DescriptionsComponent},
   {path:'approval',component:EmployeeRequestsComponent},
   {path:'typeRequest',component:TypeEmployeeRequestsComponent},
-  {path:'categoryResquest',component:CategoryEmployeeRequestsComponent}
+  {path:'categoryResquest',component:CategoryEmployeeRequestsComponent},
   {path:'description',component:DescriptionsComponent},
   {path:'goodsVoucher' , component: GoodsVoucherComponent}
 ];
