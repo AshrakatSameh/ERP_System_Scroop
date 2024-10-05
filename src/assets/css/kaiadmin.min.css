@@ -1272,7 +1272,8 @@ body {
    margin-top: 0;
    margin-bottom: 15px;
    padding-bottom: 15px;
-   padding-top: 10px
+   padding-top: 10px;
+   padding-right: 19px;
 }
 
 .sidebar .nav-collapse li.active>a,
@@ -1284,7 +1285,9 @@ body {
 .sidebar .nav-collapse li a:hover:before,
 .sidebar[data-background-color=white] .nav-collapse li a:before,
 .sidebar[data-background-color=white] .nav-collapse li a:hover:before {
-   opacity: 0 !important
+   opacity: 0 !important;
+   color: #224273;
+
 }
 
 .sidebar .nav-collapse li a,
@@ -1317,6 +1320,13 @@ body {
 
 .sidebar .nav-collapse li a:hover .sub-item,
 .sidebar[data-background-color=white] .nav-collapse li a:hover .sub-item {
+   /* opacity: 1 */
+   color: #224273;
+   
+}
+/* for sub-item2 */
+.sidebar .nav-collapse li a:hover .sub-item2,
+.sidebar[data-background-color=white] .nav-collapse li a:hover .sub-item2 {
    /* opacity: 1 */
    color: #224273;
 }
@@ -7279,7 +7289,8 @@ label.error {
 
 .modal-content {
    border-radius: .4rem;
-   border: 0 !important
+   border: 0 !important;
+   direction: rtl;
 }
 
 .rating>label {
