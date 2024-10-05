@@ -40,7 +40,9 @@
                     >
                       <h4 class="card-title text-end">عروض و طلبات البيع</h4>
                       <div class="button-group d-flex justify-content-start">
-                        <button type="button" class="btn my-button">
+                        <button type="button" class="btn my-button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
                           اضافه عرض بيع
                           <i class="fa-solid fa-plus"></i>
                         </button>
@@ -57,14 +59,7 @@
       
 
 
-                    <!-- <div class="container">
-                      <div class="row">
-                        <div class="col-md-2">
-
-                        </div>
-                      </div>
-
-                    </div> -->
+                 
                     <div class="d-flex flex-row align-items-center mt-3 d-flex justify-content-between align-items-center flex-row-reverse">
                       <div class="mb-2 me-2 " style="width:100px">
                         <select class="form-select" aria-label="Default select example">
@@ -169,4 +164,585 @@
               </div>
         </div>
     </div>
+</div>
+
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5
+          class="modal-title text-end flex-row-reverse"
+          id="staticBackdropLabel"
+        >
+          اضافه عرض بيع
+        </h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="container">
+            <!-- Row with two fields -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field1 text-end"> المنشأ</label>
+                  <input
+                    type="text"
+                    id="field1"
+                    formControlName="field1"
+                    class="form-control"
+                    placeholder="اسم المنشأ"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field2 text-end"
+                    >تاريخ الانشاء
+                  </label>
+                  <input
+                    type="date"
+                    id="field2"
+                    formControlName="field2"
+                    class="form-control"
+                    placeholder="قم باختيار التاريخ"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field4 text-end"> رقم الطلب</label>
+                  <input
+                    type="text"
+                    id="field3"
+                    formControlName="field3"
+                    class="form-control"
+                    placeholder="رقم الطلب"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field4 text-end"
+                    >تاريخ الانشاء
+                  </label>
+                  <input
+                    type="text"
+                    id="field4"
+                    formControlName="field4"
+                    class="form-control"
+                    placeholder="قم باختيار العميل"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="field5 text-end"> المندوب</label>
+                  <input
+                    type="text"
+                    id="field5"
+                    formControlName="field5"
+                    class="form-control"
+                    placeholder="فم باختيار المندوب"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="field6 text-end"
+                    >فريق البيع
+                  </label>
+                  <input
+                    type="date"
+                    id="field6"
+                    formControlName="field6"
+                    class="form-control"
+                    placeholder="قم بإختيار العقود"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="field7 text-end"
+                    >رقم طلب شراء العميل
+                  </label>
+                  <input
+                    type="date"
+                    id="field7"
+                    formControlName="field7"
+                    class="form-control"
+                    placeholder="رقم طلب شراء العميل"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field8 text-end"> حالة الطلب</label>
+                  <input
+                    type="text"
+                    id="field8"
+                    formControlName="field8"
+                    class="form-control"
+                    placeholder="قم باختيار حالة الطلب"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field9 text-end"
+                    >مركز التكلفة
+                  </label>
+                  <input
+                    type="text"
+                    id="field9"
+                    formControlName="field9"
+                    class="form-control"
+                    placeholder="قم باختيار مركز التكلفة"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field10 text-end"> مراحل الطلب</label>
+                  <input
+                    type="text"
+                    id="field10"
+                    formControlName="field10"
+                    class="form-control"
+                    placeholder="قم باختيار مراحل الطلب"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field11 text-end"
+                    >عرض اسعار
+                  </label>
+                  <input
+                    type="text"
+                    id="field11"
+                    formControlName="field11"
+                    class="form-control"
+                    placeholder="قم باختيار عرض اسعار"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="field12 text-end"> المستودع </label>
+                  <input
+                    type="text"
+                    id="field12"
+                    formControlName="field12"
+                    class="form-control"
+                    placeholder="اسم الموظف"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Row with three fields -->
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="field13">تاريخ انتهاء العرض</label>
+                  <input
+                    type="date"
+                    id="field13"
+                    formControlName="field13"
+                    class="form-control"
+                    placeholder="قم باختيار التاريخ"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="field14">فترة الدفع</label>
+                  <input
+                    type="text"
+                    id="field14"
+                    formControlName="field14"
+                    class="form-control"
+                    placeholder="قم باختيار فترة الدفع"
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="field15">نوع العرض</label>
+                  <input
+                    type="text"
+                    id="field15"
+                    formControlName="field15"
+                    class="form-control"
+                    placeholder="قم باختيار كاش/اجل"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="scroll-buttons-container">
+              <button
+                *ngFor="let btn of buttons; let i = index"
+                [id]="'button-' + i"
+                class="scroll-button"
+                type="button"
+                (click)="showContent(i)"
+              >
+                {{ btn }}
+              </button>
+            </div>
+
+            <!-- show Basic information  -->
+
+            <!-- <div *ngIf="selectedButton !== null">
+              <div *ngIf="selectedButton === 0">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> رقم الجواز</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end">تاريخ انتهاء الجواز</label>
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> رقم رخصه السواقه</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end">
+                        تاريخ انتهاء رخصه السواقه</label
+                      >
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> الجنسيه</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end">النوع</label>
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field1 text-end"> رقم الحدود</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control"
+                        placeholder="اسم الموظف"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="field2 text-end"> موقع سكن الموظف </label>
+                      <input
+                        type="text"
+                        id="field2"
+                        formControlName="field2"
+                        class="form-control"
+                        placeholder="Employee"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+
+            <!-- <button
+              type="button"
+              class="btn closebutton"
+              data-bs-dismiss="modal"
+            >
+              الغاء
+            </button>
+            <button type="button" class="btn my-button3">
+              اضافه
+              <i class="fa-solid fa-plus"></i>
+            </button> -->
+
+
+            <!-- show table button 1 -->
+            <div *ngIf="selectedButton !== null">
+              <div *ngIf="selectedButton === 0">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table
+                  id="basic-datatables"
+                  class="display table table-striped table-hover"
+                >
+                  <thead>
+                    <tr class="firstcol">
+                      <th class="firstcolleft"> </th>
+                      <th>اجمالي فرعي</th>
+                      <th>الخصم</th>
+                      <th>الضريبه</th>
+                      <th>سعر الوحدة</th>
+                      <th> الوحدة</th>
+                      <th>الوصف</th>
+                      <th>الصنف</th>
+                      <th>مسلسل</th>
+                    
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <i class="fas fa-trash"  style="cursor: pointer;"></i>
+                      </td>
+                        <td>اجمالى فرعي</td>
+                      <td>الخصم</td>
+                      <td>الضريبه</td>
+                      <td>سعر الوحده</td>
+                      <td>الوحده</td>
+                      <td>الوصف</td>
+                     <td>الصنف</td>
+                     <td>1</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-6 mx-auto ">
+                <button
+              type="button"
+              class="btn closebutton "
+              data-bs-dismiss="modal"
+            >
+              الغاء
+            </button>
+            <button type="button" class="btn my-button3">
+              اضافه
+              <i class="fa-solid fa-plus"></i>
+            </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- comments part -->
+          <div *ngIf="selectedButton === 1">
+            <div class="container comment-section mt-5">
+              <div class="card p-3">
+                <!-- Add Comment Section -->
+                <div class="container add-comment-section mt-3">
+                  <div class="card p-3 d-flex align-items-center">
+                    <div class="d-flex align-items-center w-100">
+                      <!-- User Avatar -->
+                      <img src="../../../assets/images/images.jpg" class="rounded-circle border border-primary me-2" alt="User Avatar">
+                      
+                      <!-- Comment Input Section -->
+                      <div class="flex-grow-1">
+                        <input type="text" class="form-control" placeholder="أضف تعليقاً">
+                      </div>
+                
+                      <!-- Icons and Post Button -->
+                      <div class="d-flex align-items-center ms-2">
+                        <!-- Voice Icon -->
+                        <button class="btn btn-link text-muted p-1"><i class="fa fa-microphone"></i></button>
+                
+                        <!-- Attachment Icon -->
+                        <button class="btn btn-link text-muted p-1"><i class="fa fa-paperclip"></i></button>
+                
+                        <!-- Post Button -->
+                        <button class="btn btn-primary ms-2 px-4">نشر</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+            
+                <!-- Comments List -->
+                <div class="comments-list mt-4">
+                  <div class="comment-item p-3 mb-3">
+                    <div class="d-flex align-items-start">
+                      <img src="../../../assets/images/images2.jpg" class="rounded-circle" alt="User Avatar">
+                      <div class="ms-3 w-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 class="mb-0">خالد ابراهيم</h6>
+                          <span class="text-muted small">Aug 19, 2021</span>
+                        </div>
+                        <p class="mt-2">المندوبين عندكم ممتازين جداً...</p>
+                        <div class="comment-actions d-flex">
+                          <button class="btn btn-link p-0"><i class="fa fa-heart"></i> 5</button>
+                          <button class="btn btn-link p-0 ms-3"><i class="fa fa-comment"></i> 3</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Nested Reply Comment -->
+                  <div class="comment-item p-3 mb-3 ms-5">
+                    <div class="d-flex align-items-start">
+                      <img src="../../../assets/images/images2.jpg" class="rounded-circle" alt="User Avatar">
+                      <div class="ms-3 w-100">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 class="mb-0">خالد ابراهيم</h6>
+                          <span class="text-muted small">Aug 19, 2021</span>
+                        </div>
+                        <p class="mt-2">شكراً لك على رأيك الإيجابي...</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- View More Comments Link -->
+                <div class="text-center">
+                  <a href="#" class="text-primary">باقي التعليقات</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mx-auto ">
+              <button
+            type="button"
+            class="btn closebutton "
+            data-bs-dismiss="modal"
+          >
+            الغاء
+          </button>
+          <button type="button" class="btn my-button3">
+            اضافه
+            <i class="fa-solid fa-plus"></i>
+          </button>
+            </div>
+          </div>
+
+          <!-- shoe table button 3 -->
+          <div *ngIf="selectedButton === 2">
+            <div class="card-body">
+              <div class="table-responsive">
+                <table
+                  id="basic-datatables"
+                  class="display table table-striped table-hover"
+                >
+                  <thead>
+                    <tr class="firstcol">
+                      <!-- <th class="firstcolleft"> </th> -->
+                      <th>موكل الى</th>
+                      <th> الاولويه</th>
+                      <th>التاريخ</th>
+                      <th>الحاله</th>
+                      <th>المهمه</th>
+                    
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                     
+                      <td>موكل الى</td>
+                      <td> الاولويه</td>
+                      <td>التاريخ</td>
+                      <td>الحاله</td>
+                      <td>المهمه</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-6 mx-auto ">
+                <button
+              type="button"
+              class="btn closebutton "
+              data-bs-dismiss="modal"
+            >
+              الغاء
+            </button>
+            <button type="button" class="btn my-button3">
+              اضافه
+              <i class="fa-solid fa-plus"></i>
+            </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
