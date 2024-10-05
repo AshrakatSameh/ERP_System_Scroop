@@ -1303,20 +1303,22 @@ body {
 
 .sidebar .nav-collapse li a .sub-item:before,
 .sidebar[data-background-color=white] .nav-collapse li a .sub-item:before {
-   content: '';
+   /* content: '';
    height: 4px;
-   width: 4px;
+   width: 4px; */
    background: rgba(131, 132, 138, .89);
    position: absolute;
    left: -15px;
    top: 50%;
    transform: translateY(-50%);
-   border-radius: 100%
+   border-radius: 100%;
+   direction: ltr;
 }
 
 .sidebar .nav-collapse li a:hover .sub-item,
 .sidebar[data-background-color=white] .nav-collapse li a:hover .sub-item {
-   opacity: 1
+   /* opacity: 1 */
+   color: #224273;
 }
 
 .sidebar .nav-collapse li a .sidebar-mini-icon,
@@ -10745,3 +10747,6 @@ body[data-background-color=dark] .jvm-zoom-btn {
       font-size: 18px !important
    }
 }
+
+
+/* My style */

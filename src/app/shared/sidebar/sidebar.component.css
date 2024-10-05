@@ -22,7 +22,9 @@
 }
 
 .nav-item a:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Hover effect */
+  /* background-color: rgba(255, 255, 255, 0.1); Hover effect */
+  background-color: #f7fbff;
+  color: #224273;
 }
 
 .sidebar .nav-section {
@@ -38,4 +40,26 @@
 
 .collapse.show + .caret {
   transform: rotate(90deg); /* Rotate caret when expanded */
+}
+
+
+/* for collaps */
+.toggle-icon {
+  margin-right: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sub-item {
+  cursor: pointer;
+}
+
+ul .sub-nav a{
+  transition: color 0.3s ease;
+}
+ul .sub-nav a:hover{
+  color: #224273;
+}
+ul .sub-nav a:active{
+  color: #224273;
 }

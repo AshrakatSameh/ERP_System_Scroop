@@ -17,6 +17,9 @@ import { RouterModule } from '@angular/router';
 import { SectionsComponent } from './components/staff/sections/sections.component';
 import { SalesComponent } from './components/sales/sales.component';
 import { DescriptionsComponent } from './components/staff/descriptions/descriptions.component';
+import { EmployeeRequestsComponent } from './components/approval-requests/employee-requests/employee-requests.component';
+import { TypeEmployeeRequestsComponent } from './components/approval-requests/type-employee-requests/type-employee-requests.component';
+import { CategoryEmployeeRequestsComponent } from './components/approval-requests/category-employee-requests/category-employee-requests.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { DescriptionsComponent } from './components/staff/descriptions/descripti
     ReceivedCovenantComponent,
     SectionsComponent,
     SalesComponent,
-    DescriptionsComponent
+    DescriptionsComponent,
+    EmployeeRequestsComponent,
+    TypeEmployeeRequestsComponent,
+    CategoryEmployeeRequestsComponent
   ],
   imports: [
     BrowserModule,
