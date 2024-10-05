@@ -17,6 +17,7 @@ import { RouterModule } from '@angular/router';
 import { SectionsComponent } from './components/staff/sections/sections.component';
 import { SalesComponent } from './components/sales/sales.component';
 import { DescriptionsComponent } from './components/staff/descriptions/descriptions.component';
+import { GoodsVoucherComponent } from './components/sales/goods-voucher/goods-voucher.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DescriptionsComponent } from './components/staff/descriptions/descripti
     ReceivedCovenantComponent,
     SectionsComponent,
     SalesComponent,
-    DescriptionsComponent
+    DescriptionsComponent,
+    GoodsVoucherComponent
   ],
   imports: [
     BrowserModule,

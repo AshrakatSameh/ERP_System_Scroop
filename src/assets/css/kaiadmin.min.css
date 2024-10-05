@@ -6331,16 +6331,16 @@ label.error {
 }
 
 .btn-primary {
-   background: #1572e8 !important;
-   border-color: #1572e8 !important
+   background: #224273 !important;
+   border-color: #224273 !important
 }
 
 .btn-primary:disabled,
 .btn-primary:focus,
 .btn-primary:hover {
-   color: #fff !important;
-   background: #1572e8 !important;
-   border-color: #1572e8 !important
+   color: #224273 !important;
+   background: #4875A9 !important;
+   border-color: #4875A9 !important
 }
 
 .btn-secondary {

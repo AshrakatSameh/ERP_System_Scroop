@@ -416,135 +416,7 @@
               </button>
             </div>
 
-            <!-- show Basic information  -->
-
-            <!-- <div *ngIf="selectedButton !== null">
-              <div *ngIf="selectedButton === 0">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="field1 text-end"> رقم الجواز</label>
-                      <input
-                        type="text"
-                        id="field1"
-                        formControlName="field1"
-                        class="form-control"
-                        placeholder="اسم الموظف"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="field2 text-end">تاريخ انتهاء الجواز</label>
-                      <input
-                        type="text"
-                        id="field2"
-                        formControlName="field2"
-                        class="form-control"
-                        placeholder="Employee"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="field1 text-end"> رقم رخصه السواقه</label>
-                      <input
-                        type="text"
-                        id="field1"
-                        formControlName="field1"
-                        class="form-control"
-                        placeholder="اسم الموظف"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="field2 text-end">
-                        تاريخ انتهاء رخصه السواقه</label
-                      >
-                      <input
-                        type="text"
-                        id="field2"
-                        formControlName="field2"
-                        class="form-control"
-                        placeholder="Employee"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="field1 text-end"> الجنسيه</label>
-                      <input
-                        type="text"
-                        id="field1"
-                        formControlName="field1"
-                        class="form-control"
-                        placeholder="اسم الموظف"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="field2 text-end">النوع</label>
-                      <input
-                        type="text"
-                        id="field2"
-                        formControlName="field2"
-                        class="form-control"
-                        placeholder="Employee"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="field1 text-end"> رقم الحدود</label>
-                      <input
-                        type="text"
-                        id="field1"
-                        formControlName="field1"
-                        class="form-control"
-                        placeholder="اسم الموظف"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="field2 text-end"> موقع سكن الموظف </label>
-                      <input
-                        type="text"
-                        id="field2"
-                        formControlName="field2"
-                        class="form-control"
-                        placeholder="Employee"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-
-            <!-- <button
-              type="button"
-              class="btn closebutton"
-              data-bs-dismiss="modal"
-            >
-              الغاء
-            </button>
-            <button type="button" class="btn my-button3">
-              اضافه
-              <i class="fa-solid fa-plus"></i>
-            </button> -->
-
+            
 
             <!-- show table button 1 -->
             <div *ngIf="selectedButton !== null">
@@ -587,19 +459,7 @@
                   </tbody>
                 </table>
               </div>
-              <div class="col-md-6 mx-auto ">
-                <button
-              type="button"
-              class="btn closebutton "
-              data-bs-dismiss="modal"
-            >
-              الغاء
-            </button>
-            <button type="button" class="btn my-button3">
-              اضافه
-              <i class="fa-solid fa-plus"></i>
-            </button>
-              </div>
+        
             </div>
           </div>
 
@@ -675,32 +535,37 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 mx-auto ">
-              <button
-            type="button"
-            class="btn closebutton "
-            data-bs-dismiss="modal"
-          >
-            الغاء
-          </button>
-          <button type="button" class="btn my-button3">
-            اضافه
-            <i class="fa-solid fa-plus"></i>
-          </button>
-            </div>
+         
           </div>
 
           <!-- shoe table button 3 -->
           <div *ngIf="selectedButton === 2">
             <div class="card-body">
               <div class="table-responsive">
+            
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <!-- "المهام" on the far right -->
+                  <span>المهام</span>
+                
+                  <!-- Button on the far left -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Addmession"
+                >+ إضافة مهمه</button>
+
+                  <!-- <button type="button" class="btn my-button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                          اضافه عرض بيع
+                          <i class="fa-solid fa-plus"></i>
+                        </button> -->
+                
+                </div>
+                
                 <table
                   id="basic-datatables"
                   class="display table table-striped table-hover"
                 >
                   <thead>
                     <tr class="firstcol">
-                      <!-- <th class="firstcolleft"> </th> -->
                       <th>موكل الى</th>
                       <th> الاولويه</th>
                       <th>التاريخ</th>
@@ -722,26 +587,143 @@
                   </tbody>
                 </table>
               </div>
-              <div class="col-md-6 mx-auto ">
-                <button
-              type="button"
-              class="btn closebutton "
-              data-bs-dismiss="modal"
-            >
-              الغاء
-            </button>
-            <button type="button" class="btn my-button3">
-              اضافه
-              <i class="fa-solid fa-plus"></i>
-            </button>
-              </div>
+           
+            </div>
+          </div>
+
+          <!-- ألمرفقات -->
+          <div **ngIf="selectedButton === 3"></div>
+          <div class="container mt-5">
+            <h5 class="mb-3">المرفقات</h5>
+             <!-- Voice Icon -->
+             <button class="btn btn-link text-muted p-1"><i class="fa fa-microphone"></i></button>
+                
+             <!-- Attachment Icon -->
+             <button class="btn btn-link text-muted p-1"><i class="fa fa-paperclip"></i></button>
+     
+            <div class="custom-file-upload">
+              <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
+              <p>حدد ملفًا أو قم بالسحب والإسقاط هنا</p>
+              <small class="text-muted">JPG, PNG or PDF; file size no more than 10MB</small>
             </div>
           </div>
         </div>
 
-
+        <div class="col-md-6 mx-auto ">
+          <button type="button" class="btn my-button3">
+            اضافه
+            <i class="fa-solid fa-plus"></i>
+          </button>
+          <button
+        type="button"
+        class="btn closebutton "
+        data-bs-dismiss="modal"
+      >
+        الغاء
+      </button>
+     
+        </div>
           </div>
         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- buuton modal -->
+<div class="modal fade" 
+ id="Addmession" tabindex="-1" aria-labelledby="AddmessionLabel" 
+ aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="AddmessionLabel">إضافة مهمه</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form or content for the second modal -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="taskField">اسم المهمه</label>
+              <input type="text" id="taskField" class="form-control" placeholder="أدخل اسم المهمه">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="taskField2">اسم المهمه باللغه المحليه</label>
+              <input type="text" id="taskField2" class="form-control" placeholder="أدخل اسم المهمه">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="taskField3">الحالة</label>
+              <select id="taskField" class="form-control">
+                <option value="" disabled selected>قم باختيار الحالة</option>
+                <option value="option1">الخيار الأول</option>
+                <option value="option2">الخيار الثاني</option>
+                <option value="option3">الخيار الثالث</option>
+              </select>            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="taskField4">النوع</label>
+              <select id="taskField4" class="form-control">
+                <option value="" disabled selected>قم باختيار النوع</option>
+                <option value="option1">الخيار الأول</option>
+                <option value="option2">الخيار الثاني</option>
+                <option value="option3">الخيار الثالث</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="taskField5">الأولوية</label>
+              <select id="taskField5" class="form-control">
+                <option value="" disabled selected>قم باختيار الأولوية</option>
+                <option value="option1">الخيار الأول</option>
+                <option value="option2">الخيار الثاني</option>
+                <option value="option3">الخيار الثالث</option>
+              </select>            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="taskField6">موكل الى</label>
+              <select id="taskField6" class="form-control">
+                <option value="" disabled selected>قم باختيار المستخدم</option>
+                <option value="option1">الخيار الأول</option>
+                <option value="option2">الخيار الثاني</option>
+                <option value="option3">الخيار الثالث</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label for="Textarea1">وصف المهمه</label>
+            <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="dateInput">تاريخ البدء</label>
+            <input type="date" id="dateInput" class="form-control" placeholder="قم باختيار التاريخ">
+          </div>
+          <div class="col-md-6">
+            <label for="dateInput2">تاريخ الإنتهاء</label>
+            <input type="date" id="dateInput2" class="form-control" placeholder="قم باختيار التاريخ">
+          </div>
+        </div>
+     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+        <button type="button" class="btn btn-primary">إضافة + </button>
       </div>
     </div>
   </div>

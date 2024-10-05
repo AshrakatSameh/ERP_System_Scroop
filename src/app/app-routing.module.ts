@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SalesComponent } from './components/sales/sales.component';
 import { DescriptionsComponent } from './components/staff/descriptions/descriptions.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { GoodsVoucherComponent } from './components/sales/goods-voucher/goods-voucher.component';
 
 const routes: Routes = [
   {path:'forgetPassword', component: ForgetPasswordComponent},
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path:'sections',component:SectionsComponent},
   {path:'jobs' , component:JobsComponent},
   {path:'sales', component: SalesComponent},
-  {path:'description',component:DescriptionsComponent}
+  {path:'description',component:DescriptionsComponent},
+  {path:'goodsVoucher' , component: GoodsVoucherComponent}
 ];
 
 @NgModule({
