@@ -9,7 +9,7 @@
         <div
           class="page-header d-flex justify-content-between align-items-center flex-row-reverse"
         >
-          <h3 class="fw-bold mb-3 text-end">ادارة الموظفين</h3>
+          <h3 class="fw-bold mb-3 text-end">الطلبات والموافقات</h3>
           <ul class="breadcrumbs mb-3">
             <li class="nav-item dropdown">
               <button
@@ -22,6 +22,7 @@
                 <i class="fa-solid fa-caret-down"></i>
               </button>
             </li>
+
             <li class="nav-home">
               <a href="#">
                 <i class="fa-solid fa-search"></i>
@@ -50,7 +51,7 @@
               <div
                 class="card-header d-flex justify-content-between align-items-center flex-row-reverse"
               >
-                <h4 class="card-title text-end">الوصف الوظيفي</h4>
+                <h4 class="card-title text-end">فئه طلبات الموظفين</h4>
                 <div class="button-group d-flex justify-content-start">
                   <button
                     type="button"
@@ -58,7 +59,7 @@
                     data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop"
                   >
-                    اضف وصف وظيفي
+                    اضف فئه طلبات الموظفين
                     <i class="fa-solid fa-plus"></i>
                   </button>
                   <button type="button" class="btn ms-3 my-button2">
@@ -139,11 +140,10 @@
                   >
                     <thead>
                       <tr class="firstcol">
-                        <th class="firstcolleft">كود الوصف الوظيفي</th>
-                        <th>المنشأ</th>
-                        <th>تاريخ انشاء</th>
-                        <th>اسم الوصف الوظيفي باللغه المحلية</th>
-                        <th>اسم الوصف الوظيفي</th>
+                        <th class="firstcolleft">المنشأ</th>
+                        <th>تاريخ الانشاء</th>
+                        <th>وصف فئه الطلب</th>
+                        <th>اسم فئه طلب الموظف</th>
                         <th class="firstcolright">
                           <input type="checkbox" class="large-checkbox" />
                         </th>
@@ -154,7 +154,6 @@
                         <td>Fiona Green</td>
                         <td>Chief Operating Officer (COO)</td>
                         <td>San Francisco</td>
-                        <td>48</td>
                         <td>2010/03/11</td>
                         <td>$850,000</td>
                       </tr>
@@ -162,7 +161,6 @@
                         <td>Shou Itou</td>
                         <td>Regional Marketing</td>
                         <td>Tokyo</td>
-                        <td>20</td>
                         <td>2011/08/14</td>
                         <td>$163,000</td>
                       </tr>
@@ -195,7 +193,7 @@
           class="modal-title text-end flex-row-reverse"
           id="staticBackdropLabel"
         >
-          انشاء وصف وظيفي
+          اضف فئه طلبات الموظفين
         </h5>
       </div>
       <div class="modal-body">
@@ -203,29 +201,15 @@
           <div class="container">
             <!-- Row with two fields -->
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
-                  <label for="field1 text-end"> اسم الوصف الوظيفي</label>
+                  <label for="field1 text-end"> اسم فئه طلب الموظف</label>
                   <input
                     type="text"
                     id="field1"
                     formControlName="field1"
                     class="form-control custom-input"
-                    placeholder="اسم الوصف الوظيفي"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field2 text-end"
-                    >اسم الوصف الوظيفي باللغه المحليه
-                  </label>
-                  <input
-                    type="text"
-                    id="field2"
-                    formControlName="field2"
-                    class="form-control custom-input"
-                    placeholder="Job Description"
+                    placeholder="اسم فئه طلب الموظف"
                   />
                 </div>
               </div>
@@ -234,84 +218,11 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label for="field1 text-end"> تاريخ الانشاء </label>
-                  <input
-                    type="date"
-                    id="field2"
-                    formControlName="field2"
-                    class="form-control custom-input"
-                    placeholder="قم باختيار التاريخ"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field3"> المنشأ</label>
-                  <input
-                    type="text"
-                    id="field3"
-                    formControlName="field3"
-                    class="form-control custom-input"
-                    placeholder="المنشا"
-                  />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field4"> كود الوصف الوظيفي </label>
-                  <input
-                    type="text"
-                    id="field4"
-                    formControlName="field4"
-                    class="form-control custom-input"
-                    placeholder="كود الوصف الوظيفي"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <label for="field2 "> المرفقات </label>
-
-            
-            <div class="icons-right flex-row-reverse">
-                <i class="fa-solid fa-microphone"></i>
-                <i class="fa-solid fa-file"></i>
-            </div>
-<div class="attachment-row">
-<div class="upload-rectangle" 
-     (click)="fileInput.click()"
-     (dragover)="onDragOver($event)" 
-     (dragleave)="onDragLeave($event)"
-     (drop)="onDrop($event)">
-     
-  <div class="upload-icon">
-    <i class="fa-solid fa-upload"></i>
-  </div>
-  
-  <div class="upload-text">Upload Files</div>
-  
-  <input type="file" #fileInput class="file-input" (change)="onFileSelected($event.target)" multiple />
-  
-  <!-- Display uploaded file names -->
-  <div class="uploaded-files" *ngIf="fileNames.length > 0">
-    <ul>
-      <li *ngFor="let fileName of fileNames">{{ fileName }}</li>
-    </ul>
-  </div>
-</div>
-</div>
-
-            <div class="row mb-4">
-              <div class="col-md-12">
-                <div class="form-group">
-                  <label for="floatingTextarea2">وصف الوصف الوظيفي</label>
+                  <label for="floatingTextarea2">وصف فئه طلب الموظف</label>
 
                   <textarea
                     class="form-control custom-input"
-                    placeholder="قم بشرح الوصف الوظيفي   "
+                    placeholder="قم بوصف  "
                     id="floatingTextarea2"
                     style="height: 100px"
                   ></textarea>
@@ -319,17 +230,55 @@
               </div>
             </div>
 
-            <button type="button my-button3" class="btn my-button3">
-              حفظ
-          
-            </button>
+            <label for="field2 "> المرفقات </label>
+
+            <div class="icons-right ">
+              <i class="fa-solid fa-microphone"></i>
+              <i class="fa-solid fa-file"></i>
+            </div>
+
+            <div class="attachment-row">
+              <div
+                class="upload-rectangle"
+                (click)="fileInput.click()"
+                (dragover)="onDragOver($event)"
+                (dragleave)="onDragLeave($event)"
+                (drop)="onDrop($event)"
+              >
+                <div class="upload-icon">
+                  <i class="fa-solid fa-upload"></i>
+                </div>
+
+                <div class="upload-text">Upload Files</div>
+
+                <input
+                  type="file"
+                  #fileInput
+                  class="file-input"
+                  (change)="onFileSelected($event.target)"
+                  multiple
+                />
+
+                <!-- Display uploaded file names -->
+                <div class="uploaded-files" *ngIf="fileNames.length > 0">
+                  <ul>
+                    <li *ngFor="let fileName of fileNames">{{ fileName }}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
 
             <button
-              type="button"
+              type="button "
               class="btn closebutton"
               data-bs-dismiss="modal"
             >
               الغاء
+            </button>
+            <button type="button" class="btn my-button3">
+              اضافه
+              <i class="fa-solid fa-plus"></i>
             </button>
           </div>
         </form>

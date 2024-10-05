@@ -1,11 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-descriptions',
-  templateUrl: './descriptions.component.html',
-  styleUrls: ['./descriptions.component.css']
+  selector: 'app-type-employee-requests',
+  templateUrl: './type-employee-requests.component.html',
+  styleUrls: ['./type-employee-requests.component.css']
 })
-export class DescriptionsComponent {
+export class TypeEmployeeRequestsComponent {
+
   @ViewChild('fileInput') fileInput: any; // Reference to file input
   fileNames: string[] = []; // Variable to store file names
 
@@ -45,4 +46,5 @@ export class DescriptionsComponent {
     }
     console.log(this.fileNames); // Log the file names to the console (optional)
   }
+
 }

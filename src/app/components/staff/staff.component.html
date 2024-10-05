@@ -11,6 +11,16 @@
         >
           <h3 class="fw-bold mb-3 text-end">ادارة الموظفين</h3>
           <ul class="breadcrumbs mb-3">
+
+            <li class="nav-item dropdown">
+              <button class="btn d-flex justify-content-start align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                  Admin
+                  <!-- Placeholder for the dropdown arrow -->
+                  <i class="fa-solid fa-caret-down"></i>
+              </button>
+              
+          </li>
+
             <li class="nav-home">
               <a href="#">
                 <i class="fa-solid fa-search"></i>
@@ -76,21 +86,27 @@
                   </select>
                 </div>
 
-                <button class="btn my-custom-icone">
-                  <span class="btn-label">
-                    <i class="fa-solid fa-sliders"></i>
-                  </span>
-                </button>
+                <div class="d-flex align-items-center flex-row-reverse">
+                  <!-- Button with icon -->
+                  <button class="btn my-custom-icone me-2">
+                    <span class="btn-label">
+                      <i class="fa-solid fa-sliders"></i>
+                    </span>
+                  </button>
+                
+                  <!-- Search form -->
+                  <form class="d-flex position-relative">
+                    <input
+                      class="form-control text-end search-input"
+                      type="search"
+                      placeholder="بحث في الكل"
+                      aria-label="Search"
+                    />
+                    <i class="fs-4 bi-search position-absolute search-icon"></i>
+                  </form>
+                </div>
 
-                <form class="d-flex position-relative me-2">
-                  <input
-                    class="form-control text-end search-input"
-                    type="search"
-                    placeholder="بحث في الكل"
-                    aria-label="Search"
-                  />
-                  <i class="fs-4 bi-search position-absolute search-icon"></i>
-                </form>
+                
                 <div class="icon-group d-flex align-items-center">
                   <button class="btn my-custom-icone">
                     <span class="btn-label">
@@ -194,7 +210,7 @@
                     type="text"
                     id="field1"
                     formControlName="field1"
-                    class="form-control"
+                    class="form-control custom-input"
                     placeholder="اسم الموظف"
                   />
                 </div>
@@ -208,7 +224,7 @@
                     type="text"
                     id="field2"
                     formControlName="field2"
-                    class="form-control"
+                    class="form-control custom-input"
                     placeholder="Employee"
                   />
                 </div>
@@ -223,8 +239,8 @@
                     type="text"
                     id="field1"
                     formControlName="field1"
-                    class="form-control"
-                    placeholder="اسم الموظف"
+                    class="form-control custom-input"
+                    placeholder=" قم بكتابه المهنه / الوظيفه"
                   />
                 </div>
               </div>
@@ -239,7 +255,8 @@
                     type="text"
                     id="field3"
                     formControlName="field3"
-                    class="form-control"
+                    class="form-control custom-input"
+                    placeholder="قم باختيار مشرف القسم"
                   />
                 </div>
               </div>
@@ -250,7 +267,8 @@
                     type="text"
                     id="field4"
                     formControlName="field4"
-                    class="form-control"
+                    class="form-control custom-input"
+                    placeholder="قم باختيار مدير القسم"
                   />
                 </div>
               </div>
@@ -261,7 +279,37 @@
                     type="text"
                     id="field5"
                     formControlName="field5"
-                    class="form-control"
+                    class="form-control custom-input"
+                    placeholder="قم باختيار القسم"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field1 text-end"> تاريخ البدء</label>
+                  <input
+                    type="date"
+                    id="field2"
+                    formControlName="field2"
+                    class="form-control custom-input"
+                    placeholder="قم باختيار التاريخ"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="field2 text-end"
+                    >تاريح الانتهاء
+                  </label>
+                  <input
+                    type="date"
+                    id="field2"
+                    formControlName="field2"
+                    class="form-control custom-input"
+                    placeholder="قم باختيار التاريخ"
                   />
                 </div>
               </div>
@@ -291,8 +339,8 @@
                         type="text"
                         id="field1"
                         formControlName="field1"
-                        class="form-control"
-                        placeholder="اسم الموظف"
+                        class="form-control custom-input"
+                        placeholder=" قم بكتابه رقم الجواز"
                       />
                     </div>
                   </div>
@@ -300,12 +348,12 @@
                     <div class="form-group">
                       <label for="field2 text-end">تاريخ انتهاء الجواز</label>
                       <input
-                        type="text"
-                        id="field2"
-                        formControlName="field2"
-                        class="form-control"
-                        placeholder="Employee"
-                      />
+                      type="date"
+                      id="field2"
+                      formControlName="field2"
+                      class="form-control custom-input"
+                      placeholder="قم باختيار التاريخ"
+                    />
                     </div>
                   </div>
                 </div>
@@ -318,8 +366,8 @@
                         type="text"
                         id="field1"
                         formControlName="field1"
-                        class="form-control"
-                        placeholder="اسم الموظف"
+                        class="form-control custom-input"
+                        placeholder=" قم بكتابه رقم رخصه السواقه"
                       />
                     </div>
                   </div>
@@ -329,12 +377,12 @@
                         تاريخ انتهاء رخصه السواقه</label
                       >
                       <input
-                        type="text"
-                        id="field2"
-                        formControlName="field2"
-                        class="form-control"
-                        placeholder="Employee"
-                      />
+                      type="date"
+                      id="field2"
+                      formControlName="field2"
+                      class="form-control custom-input"
+                      placeholder="قم باختيار التاريخ"
+                    />
                     </div>
                   </div>
                 </div>
@@ -347,8 +395,8 @@
                         type="text"
                         id="field1"
                         formControlName="field1"
-                        class="form-control"
-                        placeholder="اسم الموظف"
+                        class="form-control custom-input"
+                        placeholder=" قم باختيار الجنسيه"
                       />
                     </div>
                   </div>
@@ -359,8 +407,8 @@
                         type="text"
                         id="field2"
                         formControlName="field2"
-                        class="form-control"
-                        placeholder="Employee"
+                        class="form-control custom-input"
+                        placeholder="ذكر ام انثي"
                       />
                     </div>
                   </div>
@@ -374,8 +422,8 @@
                         type="text"
                         id="field1"
                         formControlName="field1"
-                        class="form-control"
-                        placeholder="اسم الموظف"
+                        class="form-control custom-input"
+                        placeholder=" قم بكتابه رقم الحدود"
                       />
                     </div>
                   </div>
@@ -386,8 +434,8 @@
                         type="text"
                         id="field2"
                         formControlName="field2"
-                        class="form-control"
-                        placeholder="Employee"
+                        class="form-control custom-input"
+                        placeholder="قم بكتابه موقع سكن الموظف"
                       />
                     </div>
                   </div>
@@ -396,6 +444,239 @@
             </div>
 
 
+            <!-- show  Notifications -->
+
+            <div *ngIf="selectedButton !== null">
+              <div *ngIf="selectedButton === 4">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+
+                      <table
+                      id="basic-datatables"
+                      class="display table table-striped table-hover"
+                    >
+                      <thead>
+                        <tr class="firstcol">
+
+                          
+                          <th class="firstcolright">
+                            اسم الاشعار
+                          </th>
+
+                          <th> تاريخ الاشعار</th>
+                          <th class="firstcolleft">حاله الاشعار </th>
+
+                        
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Fiona Green</td>
+                          <td>Chief Operating Officer (COO)</td>
+                          <td>San Francisco</td>
+                       
+                        </tr>
+                        <tr>
+                          <td>Shou Itou</td>
+                          <td>Regional Marketing</td>
+                          <td>Tokyo</td>
+                          
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+                    </div>
+                  </div>
+            
+                </div>
+
+              
+
+              
+
+                
+              </div>
+            </div>
+
+
+            <!-- show sales  -->
+
+            <div *ngIf="selectedButton !== null">
+              <div *ngIf="selectedButton === 5">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+
+                      <h5>ملخص التحصيل</h5>
+                      <table
+                      id="basic-datatables"
+                      class="display table table-striped table-hover"
+                    >
+                      <thead>
+                        <tr class="firstcol">
+
+                          
+                          <th class="firstcolright">
+                            رقم التحصيل
+                          </th>
+
+                          <th> تاريخ التحصيل</th>
+                          <th class="firstcolleft">قيمه التحصيل </th>
+
+                        
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Fiona Green</td>
+                          <td>Chief Operating Officer (COO)</td>
+                          <td>San Francisco</td>
+                       
+                        </tr>
+                        <tr>
+                          <td>Shou Itou</td>
+                          <td>Regional Marketing</td>
+                          <td>Tokyo</td>
+                          
+                        </tr>
+                      </tbody>
+                    </table>
+
+
+
+                    <h5>ملخص طلبات البيع</h5>
+
+
+                    <table
+                    id="basic-datatables"
+                    class="display table table-striped table-hover"
+                  >
+                    <thead>
+                      <tr class="firstcol">
+
+                        
+                        <th class="firstcolright">
+                          رقم طلب البيع
+                        </th>
+
+                        <th> تاريخ طلب البيع</th>
+                        <th class="firstcolleft">قيمه طلب البيع </th>
+
+                      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Fiona Green</td>
+                        <td>Chief Operating Officer (COO)</td>
+                        <td>San Francisco</td>
+                     
+                      </tr>
+                      <tr>
+                        <td>Shou Itou</td>
+                        <td>Regional Marketing</td>
+                        <td>Tokyo</td>
+                        
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                  <h5>ملخص فواتير البيع</h5>
+
+
+                  <table
+                  id="basic-datatables"
+                  class="display table table-striped table-hover"
+                >
+                  <thead>
+                    <tr class="firstcol">
+
+                      
+                      <th class="firstcolright">
+                         فاتورة البيع
+                      </th>
+
+                      <th> تاريخ فاتورة البيع</th>
+                      <th class="firstcolleft">قيمه فاتورة البيع </th>
+
+                    
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Fiona Green</td>
+                      <td>Chief Operating Officer (COO)</td>
+                      <td>San Francisco</td>
+                   
+                    </tr>
+                    <tr>
+                      <td>Shou Itou</td>
+                      <td>Regional Marketing</td>
+                      <td>Tokyo</td>
+                      
+                    </tr>
+                  </tbody>
+                </table>
+
+
+
+                    </div>
+                  </div>
+            
+                </div>
+
+              
+
+              
+
+                
+              </div>
+            </div>
+
+
+            <!-- show bank account -->
+            
+
+
+            <div *ngIf="selectedButton !== null">
+              <div *ngIf="selectedButton === 9">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label for="field1 text-end">  الحساب البنكي</label>
+                      <input
+                        type="text"
+                        id="field1"
+                        formControlName="field1"
+                        class="form-control custom-input"
+                        placeholder=" قم بكتابه الحساب البنكي"
+                      />
+                    </div>
+                  </div>
+                 
+                </div>
+
+                
+
+             
+              
+              </div>
+            </div>
+
+
+
+
+
+
+
+            <button type="button my-button3" class="btn my-button3">
+              اضافه
+              <i class="fa-solid fa-plus"></i>
+            </button>
+
             <button
               type="button"
               class="btn closebutton"
@@ -403,10 +684,7 @@
             >
               الغاء
             </button>
-            <button type="button" class="btn my-button">
-              اضافه
-              <i class="fa-solid fa-plus"></i>
-            </button>
+          
           </div>
         </form>
       </div>

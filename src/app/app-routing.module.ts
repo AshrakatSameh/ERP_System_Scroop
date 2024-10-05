@@ -10,6 +10,9 @@ import { LoginComponent } from './components/login/login.component';
 import { SalesComponent } from './components/sales/sales.component';
 import { DescriptionsComponent } from './components/staff/descriptions/descriptions.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { EmployeeRequestsComponent } from './components/approval-requests/employee-requests/employee-requests.component';
+import { TypeEmployeeRequestsComponent } from './components/approval-requests/type-employee-requests/type-employee-requests.component';
+import { CategoryEmployeeRequestsComponent } from './components/approval-requests/category-employee-requests/category-employee-requests.component';
 import { GoodsVoucherComponent } from './components/sales/goods-voucher/goods-voucher.component';
 
 const routes: Routes = [
@@ -23,6 +26,10 @@ const routes: Routes = [
   {path:'sections',component:SectionsComponent},
   {path:'jobs' , component:JobsComponent},
   {path:'sales', component: SalesComponent},
+  {path:'description',component:DescriptionsComponent},
+  {path:'approval',component:EmployeeRequestsComponent},
+  {path:'typeRequest',component:TypeEmployeeRequestsComponent},
+  {path:'categoryResquest',component:CategoryEmployeeRequestsComponent}
   {path:'description',component:DescriptionsComponent},
   {path:'goodsVoucher' , component: GoodsVoucherComponent}
 ];

@@ -18,6 +18,9 @@ import { SectionsComponent } from './components/staff/sections/sections.componen
 import { SalesComponent } from './components/sales/sales.component';
 import { DescriptionsComponent } from './components/staff/descriptions/descriptions.component';
 import { GoodsVoucherComponent } from './components/sales/goods-voucher/goods-voucher.component';
+import { EmployeeRequestsComponent } from './components/approval-requests/employee-requests/employee-requests.component';
+import { TypeEmployeeRequestsComponent } from './components/approval-requests/type-employee-requests/type-employee-requests.component';
+import { CategoryEmployeeRequestsComponent } from './components/approval-requests/category-employee-requests/category-employee-requests.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { GoodsVoucherComponent } from './components/sales/goods-voucher/goods-vo
     SectionsComponent,
     SalesComponent,
     DescriptionsComponent,
-    GoodsVoucherComponent
+    GoodsVoucherComponent,
+    EmployeeRequestsComponent,
+    TypeEmployeeRequestsComponent,
+    CategoryEmployeeRequestsComponent
   ],
   imports: [
     BrowserModule,
