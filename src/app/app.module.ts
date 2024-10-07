@@ -26,6 +26,7 @@ import { CollectionsComponent } from './components/sales/collections/collections
 import { ReceiveVoucherComponent } from './components/sales/receive-voucher/receive-voucher.component';
 import { ReturnInvoicesComponent } from './components/sales/return-invoices/return-invoices.component';
 import { TagComponent } from './components/sales/clients/tag/tag.component';
+import { ProjectsComponent } from './components/projects-and-contracts/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,8 @@ import { TagComponent } from './components/sales/clients/tag/tag.component';
     ReceiveVoucherComponent,
     ReturnInvoicesComponent,
     TagComponent
+    CategoryEmployeeRequestsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
