@@ -46,7 +46,7 @@ import { ProjectsComponent } from './components/projects-and-contracts/projects/
     CollectionsComponent,
     ReceiveVoucherComponent,
     ReturnInvoicesComponent,
-    TagComponent
+    TagComponent,
     CategoryEmployeeRequestsComponent,
     ProjectsComponent
   ],
