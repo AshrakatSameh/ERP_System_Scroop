@@ -14,6 +14,11 @@ import { EmployeeRequestsComponent } from './components/approval-requests/employ
 import { TypeEmployeeRequestsComponent } from './components/approval-requests/type-employee-requests/type-employee-requests.component';
 import { CategoryEmployeeRequestsComponent } from './components/approval-requests/category-employee-requests/category-employee-requests.component';
 import { GoodsVoucherComponent } from './components/sales/goods-voucher/goods-voucher.component';
+import { SalesInvoicesComponent } from './components/sales/sales-invoices/sales-invoices.component';
+import { CollectionsComponent } from './components/sales/collections/collections.component';
+import { ReceiveVoucherComponent } from './components/sales/receive-voucher/receive-voucher.component';
+import { ReturnInvoicesComponent } from './components/sales/return-invoices/return-invoices.component';
+import { TagComponent } from './components/sales/clients/tag/tag.component';
 
 const routes: Routes = [
   {path:'forgetPassword', component: ForgetPasswordComponent},
@@ -31,7 +36,12 @@ const routes: Routes = [
   {path:'typeRequest',component:TypeEmployeeRequestsComponent},
   {path:'categoryResquest',component:CategoryEmployeeRequestsComponent},
   {path:'description',component:DescriptionsComponent},
-  {path:'goodsVoucher' , component: GoodsVoucherComponent}
+  {path:'goodsVoucher' , component: GoodsVoucherComponent},
+  {path:'salesInvoices', component:SalesInvoicesComponent},
+  {path:'collections', component: CollectionsComponent},
+  {path:'receiveVoucher', component: ReceiveVoucherComponent},
+  {path:'returnInvoices' , component:ReturnInvoicesComponent},
+  {path:'Tag', component: TagComponent}
 ];
 
 @NgModule({

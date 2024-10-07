@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-goods-voucher',
-  templateUrl: './goods-voucher.component.html',
-  styleUrls: ['./goods-voucher.component.css']
+  selector: 'app-receive-voucher',
+  templateUrl: './receive-voucher.component.html',
+  styleUrls: ['./receive-voucher.component.css']
 })
-export class GoodsVoucherComponent {
-  // buttons=['الأصناف','الملاحظات','المهام' ,'مرفقات']
-
+export class ReceiveVoucherComponent {
   buttons = ['الأصناف', 'الملاحظات', 'المهام', 'مرفقات']
   selectedButton: number | null = null; // To track which button is clicked
 

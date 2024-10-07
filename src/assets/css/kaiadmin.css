@@ -2516,14 +2516,15 @@ label {
   line-height: 2.5rem; }
 
 /*     Form     */
-.form-control {
+/* changed */
+/* .form-control {
   font-size: 1rem;
   border-color: #ebedf2;
   padding: 0.6rem 1rem;
   height: inherit !important;
   border-width: 2px; }
   .form-control:focus {
-    border-color: #3e93ff; }
+    border-color: #3e93ff; } */
 
 /*     Form Control Sizes    */
 .form-control-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-append > .btn,
@@ -2686,15 +2687,16 @@ label {
 /*     Input    */
 .form-group,
 .form-check {
-  margin-bottom: 0;
-  padding: 10px; }
+  /* margin-bottom: 20px; */
+  /* padding: 10px; */
+ }
 
-.form-group label,
+/* .form-group label,
 .form-check label {
   margin-bottom: 0.5rem;
   color: #495057;
   font-size: 1rem;
-  white-space: nowrap; }
+  white-space: nowrap; } */
 
 .form-group-default {
   background-color: #ffffff;
@@ -2725,12 +2727,12 @@ label {
     font-weight: 400; }
   .form-group-default .form-control {
     background: unset !important; }
-  .form-group-default .form-control, .form-group-default .form-select {
+  /* .form-group-default .form-control, .form-group-default .form-select {
     border: 0;
     min-height: 25px;
     padding: 0;
     margin-top: 6px;
-    font-size: 1rem; }
+    font-size: 1rem; } */
   .form-group-default select.form-control:not([size]):not([multiple]), .form-group-default select.form-select:not([size]):not([multiple]) {
     height: unset !important; }
   .form-group-default.active {
@@ -3320,13 +3322,13 @@ label.error {
     border: 1px solid #ddd; }
 .nav-search.nav-search-round .input-group {
   border-radius: 50px; }
-.nav-search .form-control {
+/* .nav-search .form-control {
   border: 0;
   background: transparent !important;
   font-size: 1rem;
   padding: 0.75em 1em;
   min-width: 250px;
-  max-width: 100%; }
+  max-width: 100%; } */
 .nav-search .input-group-text {
   border: 0;
   background: transparent; }
