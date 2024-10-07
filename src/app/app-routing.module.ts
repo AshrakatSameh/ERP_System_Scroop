@@ -14,6 +14,10 @@ import { EmployeeRequestsComponent } from './components/approval-requests/employ
 import { TypeEmployeeRequestsComponent } from './components/approval-requests/type-employee-requests/type-employee-requests.component';
 import { CategoryEmployeeRequestsComponent } from './components/approval-requests/category-employee-requests/category-employee-requests.component';
 import { GoodsVoucherComponent } from './components/sales/goods-voucher/goods-voucher.component';
+import { ProjectsComponent } from './components/projects-and-contracts/projects/projects.component';
+import { TypeOfProjectsComponent } from './components/projects-and-contracts/type-of-projects/type-of-projects.component';
+import { ContractsComponent } from './components/projects-and-contracts/contracts/contracts.component';
+import { TypeOfContractsComponent } from './components/projects-and-contracts/type-of-contracts/type-of-contracts.component';
 
 const routes: Routes = [
   {path:'forgetPassword', component: ForgetPasswordComponent},
@@ -31,7 +35,11 @@ const routes: Routes = [
   {path:'typeRequest',component:TypeEmployeeRequestsComponent},
   {path:'categoryResquest',component:CategoryEmployeeRequestsComponent},
   {path:'description',component:DescriptionsComponent},
-  {path:'goodsVoucher' , component: GoodsVoucherComponent}
+  {path:'goodsVoucher' , component: GoodsVoucherComponent},
+  {path:'projects',component:ProjectsComponent},
+  {path:'projectType', component:TypeOfProjectsComponent},
+  {path:'contracts',component:ContractsComponent},
+  {path:'contractsType',component:TypeOfContractsComponent}
 ];
 
 @NgModule({

@@ -1,19 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  selector: 'app-type-of-projects',
+  templateUrl: './type-of-projects.component.html',
+  styleUrls: ['./type-of-projects.component.css']
 })
-export class ProjectsComponent implements OnInit {
-
-  ngOnInit(): void {
-    this.toggleTableonClick();
-    
-  }
-
-  
-
+export class TypeOfProjectsComponent {
   isFirstButtonClicked = false;
   isSecondButtonClicked = false;
 
@@ -55,4 +47,5 @@ export class ProjectsComponent implements OnInit {
   removeRow() {
     this.isRowRemoved = true;
   }
+
 }

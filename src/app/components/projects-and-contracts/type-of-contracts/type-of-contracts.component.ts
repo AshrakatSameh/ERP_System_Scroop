@@ -1,19 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  selector: 'app-type-of-contracts',
+  templateUrl: './type-of-contracts.component.html',
+  styleUrls: ['./type-of-contracts.component.css']
 })
-export class ProjectsComponent implements OnInit {
-
-  ngOnInit(): void {
-    this.toggleTableonClick();
-    
-  }
-
-  
-
+export class TypeOfContractsComponent {
   isFirstButtonClicked = false;
   isSecondButtonClicked = false;
 
