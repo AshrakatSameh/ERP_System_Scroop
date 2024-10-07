@@ -19,6 +19,12 @@ import { CollectionsComponent } from './components/sales/collections/collections
 import { ReceiveVoucherComponent } from './components/sales/receive-voucher/receive-voucher.component';
 import { ReturnInvoicesComponent } from './components/sales/return-invoices/return-invoices.component';
 import { TagComponent } from './components/sales/clients/tag/tag.component';
+import { RepaymentPeriodComponent } from './components/sales/clients/repayment-period/repayment-period.component';
+import { RepaymentWayComponent } from './components/sales/clients/repayment-way/repayment-way.component';
+import { BoxAndCommitmentComponent } from './components/sales/salesResponsible/box-and-commitment/box-and-commitment.component';
+import { ContactsComponent } from './components/sales/clients/contacts/contacts.component';
+import { BranchesAndLocationsComponent } from './components/sales/clients/branches-and-locations/branches-and-locations.component';
+import { ClientsComponent } from './components/sales/clients/clients/clients.component';
 
 const routes: Routes = [
   {path:'forgetPassword', component: ForgetPasswordComponent},
@@ -41,7 +47,13 @@ const routes: Routes = [
   {path:'collections', component: CollectionsComponent},
   {path:'receiveVoucher', component: ReceiveVoucherComponent},
   {path:'returnInvoices' , component:ReturnInvoicesComponent},
-  {path:'Tag', component: TagComponent}
+  {path:'Tag', component: TagComponent},
+  {path:'repaymentPeriod', component:RepaymentPeriodComponent},
+  {path:'repaymentWay', component: RepaymentWayComponent},
+  {path:'boxAndCommitment' , component: BoxAndCommitmentComponent},
+  {path:'contacts', component: ContactsComponent},
+  {path:'branchesAndLocationsOfClients', component:BranchesAndLocationsComponent},
+  {path:'clients', component: ClientsComponent}
 ];
 
 @NgModule({

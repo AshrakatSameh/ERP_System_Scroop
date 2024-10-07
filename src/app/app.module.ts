@@ -27,6 +27,12 @@ import { ReceiveVoucherComponent } from './components/sales/receive-voucher/rece
 import { ReturnInvoicesComponent } from './components/sales/return-invoices/return-invoices.component';
 import { TagComponent } from './components/sales/clients/tag/tag.component';
 import { ProjectsComponent } from './components/projects-and-contracts/projects/projects.component';
+import { RepaymentPeriodComponent } from './components/sales/clients/repayment-period/repayment-period.component';
+import { RepaymentWayComponent } from './components/sales/clients/repayment-way/repayment-way.component';
+import { BoxAndCommitmentComponent } from './components/sales/salesResponsible/box-and-commitment/box-and-commitment.component';
+import { ContactsComponent } from './components/sales/clients/contacts/contacts.component';
+import { BranchesAndLocationsComponent } from './components/sales/clients/branches-and-locations/branches-and-locations.component';
+import { ClientsComponent } from './components/sales/clients/clients/clients.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +54,13 @@ import { ProjectsComponent } from './components/projects-and-contracts/projects/
     ReturnInvoicesComponent,
     TagComponent,
     CategoryEmployeeRequestsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    RepaymentPeriodComponent,
+    RepaymentWayComponent,
+    BoxAndCommitmentComponent,
+    ContactsComponent,
+    BranchesAndLocationsComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule,
