@@ -12,6 +12,12 @@ export class ContractsComponent {
   istableview = true;
   iscardsview=false;
 
+  isMapView = false;
+
+  toggleMap(){
+    this.isMapView = true
+  }
+
   toggleFirstButtonClick() {
     this.isFirstButtonClicked = true;
   this.isSecondButtonClicked = false;
@@ -46,6 +52,15 @@ export class ContractsComponent {
 
   removeRow() {
     this.isRowRemoved = true;
+  }
+
+  buttons=['التفاصيل','المهام','الاستبيانات','التعليقات','مالية العقد','اقساط العقد']
+
+  selectedButton: number | null = null; // To track which button is clicked
+
+  // Method to handle button click and show content
+  showContent(index: number): void {
+    this.selectedButton = index;
   }
 
 }

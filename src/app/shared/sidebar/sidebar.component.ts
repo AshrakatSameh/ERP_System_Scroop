@@ -8,6 +8,17 @@ import { Component } from '@angular/core';
 export class SidebarComponent {
 
 
+  // isCollapsedIcone: boolean = false;
+  // isCollapsedProjects: boolean = false;
+
+  // toggleIcon() {
+  //   this.isCollapsedIcone = !this.isCollapsedIcone;
+  // }
+  
+  // toggleProjectsIcon() {
+  //   this.isCollapsedProjects = !this.isCollapsedProjects;
+  // }
+
    // Define the object with string indexing
    isCollapsed: { [key: string]: boolean } = {
     salesMovementSub: true,
@@ -15,6 +26,12 @@ export class SidebarComponent {
     clientsSub: true,
     salesReportsSub: true,
     settingsSub: true,
+
+
+    //projects toggle
+
+    projectsMovementSub :true,
+    contractsMovementSub:true
   };
   
 

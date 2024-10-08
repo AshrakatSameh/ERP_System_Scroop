@@ -12,6 +12,11 @@ export class ProjectsComponent implements OnInit {
     
   }
 
+  isMapView = false;
+
+  toggleMap(){
+    this.isMapView = true
+  }
   
 
   isFirstButtonClicked = false;
@@ -54,5 +59,14 @@ export class ProjectsComponent implements OnInit {
 
   removeRow() {
     this.isRowRemoved = true;
+  }
+
+  buttons=['التفاصيل','المهام','الاستبيانات','التعليقات','مالية المشروع']
+
+  selectedButton: number | null = null; // To track which button is clicked
+
+  // Method to handle button click and show content
+  showContent(index: number): void {
+    this.selectedButton = index;
   }
 }

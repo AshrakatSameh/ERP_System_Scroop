@@ -189,37 +189,62 @@
               </ul>
             </div>
           </li>
+          
           <li class="nav-item">
-            <a data-bs-toggle="collapse" href="#maps">
+            <!-- Main Projects and Contracts Menu -->
+            <a data-bs-toggle="collapse" href="#mainMenu" role="button" aria-expanded="false" aria-controls="mainMenu">
               <i class="fas fa-map-marker-alt"></i>
               <p>المشاريع والعقود</p>
-              <span class="caret"></span>
+              <span class="caret"></span>        
             </a>
-            <div class="collapse" id="maps">
-              <ul class="nav nav-collapse">
-                <li>
-                  <a routerLink="/projects">
-                    <span class="sub-item">المشاريع</span>
+          
+            <!-- Main Collapsible Menu -->
+            <div class="collapse" id="mainMenu">
+              <ul class="nav flex-column ms-3">
+                <!-- Projects Submenu -->
+                <li class="nav-item">
+                  <a data-bs-toggle="collapse" href="#projectsSubmenu" role="button" aria-expanded="false" aria-controls="projectsSubmenu">
+                    المشاريع
+                    <span class="caret"></span>
                   </a>
+          
+                  <div class="collapse" id="projectsSubmenu">
+                    <ul class="nav flex-column ms-3">
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="/projects">المشاريع</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="/projectType">نوع المشاريع</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li>
-                  <a routerLink="/projectType">
-                    <span class="sub-item">نوع المشاريع</span>
+          
+                <!-- Contracts Submenu -->
+                <li class="nav-item">
+                  <a data-bs-toggle="collapse" href="#contractSubmenu" role="button" aria-expanded="false" aria-controls="contractSubmenu">
+                    العقود
+                    <span class="caret"></span>
                   </a>
-                </li>
-                <li>
-                  <a routerLink="/contracts">
-                    <span class="sub-item"> العقود</span>
-                  </a>
-                </li>
-                <li>
-                  <a routerLink="/contractsType">
-                    <span class="sub-item">نوع العقود</span>
-                  </a>
+          
+                  <div class="collapse" id="contractSubmenu">
+                    <ul class="nav flex-column ms-3">
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="/contracts">العقود</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" routerLink="/contractsType">نوع العقود</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
           </li>
+          
+          
+
+
           <li class="nav-item">
             <a data-bs-toggle="collapse" href="#charts">
               <i class="far fa-chart-bar"></i>
