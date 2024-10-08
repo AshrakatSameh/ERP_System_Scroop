@@ -85,14 +85,14 @@
   
   .search-input {
     padding-right: 2.5rem; /* Add padding to make space for the icon */
-    margin-top: 15px;
+    /* margin-top: 15px; */
     border-radius: 12px;
     width: 350px;
   }
   
   .search-icon {
     right: 10px; /* Keep the icon on the right side */
-    top: 63%;
+    top: 53%;
     transform: translateY(-50%);
     font-size: 1rem !important; /* Force smaller icon size */
     color: #667085; /* Icon color */
@@ -205,7 +205,7 @@ tr, th, td {
   height: 50px;
 }
 
-input.form-control {
+input.form-control, select.form-control {
   border-radius: 10px;
 }
 
@@ -222,7 +222,7 @@ input.form-control {
   border-radius: 8px;
 }
 
-.add-comment-section .form-control {
+.add-comment-section .form-control  {
   border-radius: 20px;
 }
 

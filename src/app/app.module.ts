@@ -21,6 +21,11 @@ import { GoodsVoucherComponent } from './components/sales/goods-voucher/goods-vo
 import { EmployeeRequestsComponent } from './components/approval-requests/employee-requests/employee-requests.component';
 import { TypeEmployeeRequestsComponent } from './components/approval-requests/type-employee-requests/type-employee-requests.component';
 import { CategoryEmployeeRequestsComponent } from './components/approval-requests/category-employee-requests/category-employee-requests.component';
+import { SalesInvoicesComponent } from './components/sales/sales-invoices/sales-invoices.component';
+import { CollectionsComponent } from './components/sales/collections/collections.component';
+import { ReceiveVoucherComponent } from './components/sales/receive-voucher/receive-voucher.component';
+import { ReturnInvoicesComponent } from './components/sales/return-invoices/return-invoices.component';
+import { TagComponent } from './components/sales/clients/tag/tag.component';
 import { ProjectsComponent } from './components/projects-and-contracts/projects/projects.component';
 import { TypeOfProjectsComponent } from './components/projects-and-contracts/type-of-projects/type-of-projects.component';
 import { ContractsComponent } from './components/projects-and-contracts/contracts/contracts.component';
@@ -43,7 +48,14 @@ import { TypeOfContractsComponent } from './components/projects-and-contracts/ty
     ProjectsComponent,
     TypeOfProjectsComponent,
     ContractsComponent,
-    TypeOfContractsComponent
+    TypeOfContractsComponent,
+    SalesInvoicesComponent,
+    CollectionsComponent,
+    ReceiveVoucherComponent,
+    ReturnInvoicesComponent,
+    TagComponent,
+    CategoryEmployeeRequestsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

@@ -37,10 +37,10 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center flex-row-reverse">
-              <h4 class="card-title text-end">عروض و طلبات البيع</h4>
+              <h4 class="card-title text-end">فواتير المبيعات</h4>
               <div class="button-group d-flex justify-content-start">
                 <button type="button" class="btn my-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  اضافه عرض بيع
+                  اضف فاتورة بيع
                   <i class="fa-solid fa-plus"></i>
                 </button>
                 <button type="button" class="btn ms-3 my-button">
@@ -111,7 +111,7 @@
                 <table id="basic-datatables" class="display table table-striped table-hover">
                   <thead>
                     <tr class="firstcol">
-                      <th class="firstcolleft">مدير القسم</th>
+                        <th><i class="fa-solid fa-arrow-right-arrow-left"></i></th>
                       <th>المندوب</th>
                       <th>العميل</th>
                       <th>تاريخ الانشاء</th>
@@ -124,7 +124,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Fiona Green</td>
+                        <td> </td>
                       <td>Fiona Green</td>
                       <td>Chief Operating Officer (COO)</td>
                       <td>San Francisco</td>
@@ -134,7 +134,7 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>Shou Itou</td>
+                        <td> </td>
                       <td>Shou Itou</td>
                       <td>Regional Marketing</td>
                       <td>Tokyo</td>
@@ -173,14 +173,26 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
+                    <label for="location" class="form-label">المنشأ</label>
+                <div class="input-group">
+                    <select class="form-control" id="location">
+                        <option selected>قم بإختيار المنشأ</option>
+                        <option value="1">الموقع 1</option>
+                        <option value="2">الموقع 2</option>
+                        <option value="3">الموقع 3</option>
+                    </select>
+                </div>
+                </div>
+                <!-- <div class="form-group">
                   <label for="field1 text-end"> المنشأ</label>
+                  
                   <input type="text" id="field1" formControlName="field1" class="form-control"
                     placeholder="اسم المنشأ" />
-                </div>
+                </div> -->
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field2 text-end">تاريخ الانشاء
+                  <label for="field2 text-end" class="form-label">تاريخ الانشاء
                   </label>
                   <input type="date" id="field2" formControlName="field2" class="form-control"
                     placeholder="قم باختيار التاريخ" />
@@ -191,17 +203,22 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field4 text-end"> رقم الطلب</label>
+                  <label for="field4 text-end" class="form-label"> رقم الطلب</label>
                   <input type="text" id="field3" formControlName="field3" class="form-control"
                     placeholder="رقم الطلب" />
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field4 text-end">تاريخ الانشاء
-                  </label>
-                  <input type="text" id="field4" formControlName="field4" class="form-control"
-                    placeholder="قم باختيار العميل" />
+                    <label for="location" class="form-label">العميل</label>
+                <div class="input-group">
+                    <select class="form-control" id="location">
+                        <option selected>قم بإختيار العميل</option>
+                        <option value="1">العميل 1</option>
+                        <option value="2">العميل 2</option>
+                        <option value="3">العميل 3</option>
+                    </select>
+                </div>
                 </div>
               </div>
             </div>
@@ -209,22 +226,33 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <label for="field5 text-end"> المندوب</label>
-                  <input type="text" id="field5" formControlName="field5" class="form-control"
-                    placeholder="فم باختيار المندوب" />
+                    <label for="location" class="form-label">المندوب</label>
+                <div class="input-group">
+                    <select class="form-select form-control" id="location">
+                        <option selected>قم بإختيار المندوب</option>
+                        <option value="1">المندوب 1</option>
+                        <option value="2">المندوب 2</option>
+                        <option value="3">المندوب 3</option>
+                    </select>
+                </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label for="field6 text-end">فريق البيع
-                  </label>
-                  <input type="date" id="field6" formControlName="field6" class="form-control"
-                    placeholder="قم بإختيار العقود" />
+                    <label for="location" class="form-label">فريق البيع</label>
+                <div class="input-group">
+                    <select class="form-control" id="location">
+                        <option selected>قم بإختيار فريق البيع</option>
+                        <option value="1">فريق 1</option>
+                        <option value="2">فريق 2</option>
+                        <option value="3">فريق 3</option>
+                    </select>
+                </div>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <label for="field7 text-end">رقم طلب شراء العميل
+                  <label for="field7 text-end" class="form-label">رقم فاتورة العميل
                   </label>
                   <input type="date" id="field7" formControlName="field7" class="form-control"
                     placeholder="رقم طلب شراء العميل" />
@@ -235,72 +263,100 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field8 text-end"> حالة الطلب</label>
-                  <input type="text" id="field8" formControlName="field8" class="form-control"
-                    placeholder="قم باختيار حالة الطلب" />
+                    <label for="location" class="form-label">حالة الفاتورة</label>
+                <div class="input-group">
+                    <select class="form-control" id="location">
+                        <option selected>قم بإختيار حالة الفاتورة</option>
+                        <option value="1">حالة 1</option>
+                        <option value="2">حالة 2</option>
+                        <option value="3">حالة 3</option>
+                    </select>
+                </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="field9 text-end">مركز التكلفة
-                  </label>
-                  <input type="text" id="field9" formControlName="field9" class="form-control"
-                    placeholder="قم باختيار مركز التكلفة" />
+                    <label for="location" class="form-label">الأصناف</label>
+                <div class="input-group">
+                    <select class="form-control" id="location">
+                        <option selected>قم بإختيار الأصناف</option>
+                        <option value="1">صنف 1</option>
+                        <option value="2">صنف 2</option>
+                        <option value="3">صنف 3</option>
+                    </select>
+                </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field10 text-end"> مراحل الطلب</label>
-                  <input type="text" id="field10" formControlName="field10" class="form-control"
-                    placeholder="قم باختيار مراحل الطلب" />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="field11 text-end">عرض اسعار
-                  </label>
-                  <input type="text" id="field11" formControlName="field11" class="form-control"
-                    placeholder="قم باختيار عرض اسعار" />
-                </div>
-              </div>
-            </div>
+        
 
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
-                  <label for="field12 text-end"> المستودع </label>
-                  <input type="text" id="field12" formControlName="field12" class="form-control"
-                    placeholder="اسم الموظف" />
+                    <label for="location" class="form-label">قائمة أسعار العميل</label>
+                <div class="input-group">
+                    <select class="form-control" id="location">
+                        <option selected>قم بإختيار قائمة أسعار العميل</option>
+                        <option value="1">قائمة 1</option>
+                        <option value="2">قائمة 2</option>
+                        <option value="3">قائمة 3</option>
+                    </select>
+                </div>
                 </div>
               </div>
             </div>
-
-            <!-- Row with three fields -->
             <div class="row">
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="field13">تاريخ انتهاء العرض</label>
-                  <input type="date" id="field13" formControlName="field13" class="form-control"
-                    placeholder="قم باختيار التاريخ" />
+                <div class="col-md-6">
+                  <div class="form-group">
+                        <label for="field7 text-end" class="form-label">فترة الدفع
+                        </label>
+                        <div class="input-group">
+                            <input type="date" id="field7" formControlName="field7" class="form-control"
+                          placeholder="فترة الدفع" />
+                        </div>
+                      </div>
+                  
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="location" class="form-label">نوع الفاتورة</label>
+                  <div class="input-group">
+                      <select class="form-control" id="location">
+                          <option selected>قم بإختيار نوع الفاتورة</option>
+                          <option value="1">نوع 1</option>
+                          <option value="2">نوع 2</option>
+                          <option value="3">نوع 3</option>
+                      </select>
+                  </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="field14">فترة الدفع</label>
-                  <input type="text" id="field14" formControlName="field14" class="form-control"
-                    placeholder="قم باختيار فترة الدفع" />
+              <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="location" class="form-label">مركز التكلفة</label>
+                    <div class="input-group">
+                        <select class="form-select form-control" id="location">
+                            <option selected>قم بإختيار مركز التكلفة</option>
+                            <option value="1">مركز 1</option>
+                            <option value="2">مركز 2</option>
+                            <option value="3">مركز 3</option>
+                        </select>
+                    </div>
+                    </div>
+             
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="field7 text-end" class="form-label">السائق 
+                        </label>
+                        <div class="input-group">
+                            <input type="text" id="field7" formControlName="field7" class="form-control"
+                          placeholder="قم بكتابه السائق" />
+                        </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <label for="field15">نوع العرض</label>
-                  <input type="text" id="field15" formControlName="field15" class="form-control"
-                    placeholder="قم باختيار كاش/اجل" />
-                </div>
-              </div>
-            </div>
 
             <div class="scroll-buttons-container">
               <button *ngFor="let btn of buttons; let i = index" [id]="'button-' + i" class="scroll-button"
@@ -512,101 +568,102 @@
   </div>
 </div>
 
+
 <!-- buuton modal -->
 <div class="modal fade" id="Addmession" tabindex="-1" aria-labelledby="AddmessionLabel" aria-hidden="true">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="AddmessionLabel">إضافة مهمه</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Form or content for the second modal -->
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="taskField">اسم المهمه</label>
-              <input type="text" id="taskField" class="form-control" placeholder="أدخل اسم المهمه">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="taskField2">اسم المهمه باللغه المحليه</label>
-              <input type="text" id="taskField2" class="form-control" placeholder="أدخل اسم المهمه">
-            </div>
-          </div>
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="AddmessionLabel">إضافة مهمه</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="taskField3">الحالة</label>
-              <select id="taskField" class="form-control">
-                <option value="" disabled selected>قم باختيار الحالة</option>
-                <option value="option1">الخيار الأول</option>
-                <option value="option2">الخيار الثاني</option>
-                <option value="option3">الخيار الثالث</option>
-              </select>
+        <div class="modal-body">
+          <!-- Form or content for the second modal -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="taskField">اسم المهمه</label>
+                <input type="text" id="taskField" class="form-control" placeholder="أدخل اسم المهمه">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="taskField2">اسم المهمه باللغه المحليه</label>
+                <input type="text" id="taskField2" class="form-control" placeholder="أدخل اسم المهمه">
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="taskField4">النوع</label>
-              <select id="taskField4" class="form-control">
-                <option value="" disabled selected>قم باختيار النوع</option>
-                <option value="option1">الخيار الأول</option>
-                <option value="option2">الخيار الثاني</option>
-                <option value="option3">الخيار الثالث</option>
-              </select>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="taskField3">الحالة</label>
+                <select id="taskField" class="form-control">
+                  <option value="" disabled selected>قم باختيار الحالة</option>
+                  <option value="option1">الخيار الأول</option>
+                  <option value="option2">الخيار الثاني</option>
+                  <option value="option3">الخيار الثالث</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="taskField4">النوع</label>
+                <select id="taskField4" class="form-control">
+                  <option value="" disabled selected>قم باختيار النوع</option>
+                  <option value="option1">الخيار الأول</option>
+                  <option value="option2">الخيار الثاني</option>
+                  <option value="option3">الخيار الثالث</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="taskField5">الأولوية</label>
-              <select id="taskField5" class="form-control">
-                <option value="" disabled selected>قم باختيار الأولوية</option>
-                <option value="option1">الخيار الأول</option>
-                <option value="option2">الخيار الثاني</option>
-                <option value="option3">الخيار الثالث</option>
-              </select>
+  
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="taskField5">الأولوية</label>
+                <select id="taskField5" class="form-control">
+                  <option value="" disabled selected>قم باختيار الأولوية</option>
+                  <option value="option1">الخيار الأول</option>
+                  <option value="option2">الخيار الثاني</option>
+                  <option value="option3">الخيار الثالث</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="taskField6">موكل الى</label>
+                <select id="taskField6" class="form-control">
+                  <option value="" disabled selected>قم باختيار المستخدم</option>
+                  <option value="option1">الخيار الأول</option>
+                  <option value="option2">الخيار الثاني</option>
+                  <option value="option3">الخيار الثالث</option>
+                </select>
+              </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <label for="taskField6">موكل الى</label>
-              <select id="taskField6" class="form-control">
-                <option value="" disabled selected>قم باختيار المستخدم</option>
-                <option value="option1">الخيار الأول</option>
-                <option value="option2">الخيار الثاني</option>
-                <option value="option3">الخيار الثالث</option>
-              </select>
+          <div class="row">
+            <div class="col-md-12">
+              <label for="Textarea1">وصف المهمه</label>
+              <textarea class="form-control" id="Textarea1" rows="3"></textarea>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <label for="Textarea1">وصف المهمه</label>
-            <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="dateInput">تاريخ البدء</label>
+              <input type="date" id="dateInput" class="form-control" placeholder="قم باختيار التاريخ">
+            </div>
+            <div class="col-md-6">
+              <label for="dateInput2">تاريخ الإنتهاء</label>
+              <input type="date" id="dateInput2" class="form-control" placeholder="قم باختيار التاريخ">
+            </div>
           </div>
+  
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <label for="dateInput">تاريخ البدء</label>
-            <input type="date" id="dateInput" class="form-control" placeholder="قم باختيار التاريخ">
-          </div>
-          <div class="col-md-6">
-            <label for="dateInput2">تاريخ الإنتهاء</label>
-            <input type="date" id="dateInput2" class="form-control" placeholder="قم باختيار التاريخ">
-          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
+          <button type="button" class="btn btn-primary">إضافة + </button>
         </div>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إغلاق</button>
-        <button type="button" class="btn btn-primary">إضافة + </button>
       </div>
     </div>
   </div>
-</div>

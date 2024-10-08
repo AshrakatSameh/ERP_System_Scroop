@@ -18,6 +18,11 @@ import { ProjectsComponent } from './components/projects-and-contracts/projects/
 import { TypeOfProjectsComponent } from './components/projects-and-contracts/type-of-projects/type-of-projects.component';
 import { ContractsComponent } from './components/projects-and-contracts/contracts/contracts.component';
 import { TypeOfContractsComponent } from './components/projects-and-contracts/type-of-contracts/type-of-contracts.component';
+import { SalesInvoicesComponent } from './components/sales/sales-invoices/sales-invoices.component';
+import { CollectionsComponent } from './components/sales/collections/collections.component';
+import { ReceiveVoucherComponent } from './components/sales/receive-voucher/receive-voucher.component';
+import { ReturnInvoicesComponent } from './components/sales/return-invoices/return-invoices.component';
+import { TagComponent } from './components/sales/clients/tag/tag.component';
 
 const routes: Routes = [
   {path:'forgetPassword', component: ForgetPasswordComponent},
@@ -39,7 +44,12 @@ const routes: Routes = [
   {path:'projects',component:ProjectsComponent},
   {path:'projectType', component:TypeOfProjectsComponent},
   {path:'contracts',component:ContractsComponent},
-  {path:'contractsType',component:TypeOfContractsComponent}
+  {path:'contractsType',component:TypeOfContractsComponent},
+  {path:'salesInvoices', component:SalesInvoicesComponent},
+  {path:'collections', component: CollectionsComponent},
+  {path:'receiveVoucher', component: ReceiveVoucherComponent},
+  {path:'returnInvoices' , component:ReturnInvoicesComponent},
+  {path:'Tag', component: TagComponent}
 ];
 
 @NgModule({

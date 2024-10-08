@@ -1,30 +1,4 @@
-<!-- 
 
-  <div class="sidebar" data-background-color="dark2">
-    <div class="sidebar-logo">
-      <div class="logo-header" data-background-color="dark">
-        <a href="index.html" class="logo">
-          <img
-            src="assets/img/kaiadmin/logo_light.svg"
-            alt="navbar brand"
-            class="navbar-brand"
-            height="20"
-          />
-        </a>
-        <div class="nav-toggle">
-          <button class="btn btn-toggle toggle-sidebar">
-            <i class="gg-menu-right"></i>
-          </button>
-          <button class="btn btn-toggle sidenav-toggler">
-            <i class="gg-menu-left"></i>
-          </button>
-        </div>
-        <button class="topbar-toggler more">
-          <i class="gg-more-vertical-alt"></i>
-        </button>
-      </div>
-      
-    </div> -->
 
 
   <!-- New One -->
@@ -63,10 +37,10 @@
                         <span class="sub-item">عروض و طلبات البيع</span>
                       </a>
                       <li><a href="/goodsVoucher"><span class="sub-item">سند تسليم بضاعة</span></a></li>
-                      <li><a><span class="sub-item">فواتير المبيعات</span></a></li>
-                      <li><a><span class="sub-item">سند استيلام البضاعه</span></a></li>
-                      <li><a><span class="sub-item">فواتير المرتجعات</span></a></li>
-                      <li><a><span class="sub-item">التحصيلات</span></a></li>
+                      <li><a href="/salesInvoices"><span class="sub-item">فواتير المبيعات</span></a></li>
+                      <li><a href="/receiveVoucher"><span class="sub-item">سند استيلام البضاعه</span></a></li>
+                      <li><a href="/returnInvoices"><span class="sub-item">فواتير المرتجعات</span></a></li>
+                      <li><a href="/collections"><span class="sub-item">التحصيلات</span></a></li>
                     </ul>
                   </div>
                 </li>
@@ -79,8 +53,13 @@
                   </a>
                   <div [ngClass]="{'collapse': isCollapsed['salesManagersSub']}" id="salesManagersSub">
                     <ul class="nav nav-collapse sub-nav">
-                      <li><a href="#">مدراء كبار</a></li>
-                      <li><a href="#">مدراء صغار</a></li>
+                      <li><a href="#"><span class="sub-item">جهات الإتصال</span></a></li>
+                      <li><a href="#"><span class="sub-item">العملاء</span></a></li>
+                      <li><a href="#"><span class="sub-item">قوائم الأسعار</span></a></li>
+                      <li><a href="/Tag"><span class="sub-item">الوسم</span></a></li>
+                      <li><a href="#"><span class="sub-item">مواقع وفروع العملاء</span></a></li>
+                      <li><a href="#"><span class="sub-item">فترة السداد</span></a></li>
+                      <li><a href="#"><span class="sub-item">طريقة السداد</span></a></li>
                     </ul>
                   </div>
                 </li>
@@ -93,8 +72,13 @@
                   </a>
                   <div [ngClass]="{'collapse': isCollapsed['clientsSub']}" id="clientsSub">
                     <ul class="nav nav-collapse sub-nav">
-                      <li><a href="#">قائمة العملاء</a></li>
-                      <li><a href="#">فئات العملاء</a></li>
+                      <li><a href="#"><span class="sub-item">جهات الإتصال</span></a></li>
+                      <li><a href="#"><span class="sub-item">العملاء</span></a></li>
+                      <li><a href="#"><span class="sub-item">قوائم الأسعار</span></a></li>
+                      <li><a href="/Tag"><span class="sub-item">الوسم</span></a></li>
+                      <li><a href="#"><span class="sub-item">مواقع وفروع العملاء</span></a></li>
+                      <li><a href="#"><span class="sub-item">فترة السداد</span></a></li>
+                      <li><a href="#"><span class="sub-item">طريقة السداد</span></a></li>
                     </ul>
                   </div>
                 </li>

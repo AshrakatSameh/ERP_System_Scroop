@@ -37,11 +37,11 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header d-flex justify-content-between align-items-center flex-row-reverse">
-                            <h4 class="card-title text-end">سند تسليم البضاعه</h4>
+                            <h4 class="card-title text-end">سند استلام البضاعه</h4>
                             <div class="button-group d-flex justify-content-start">
                                 <button type="button" class="btn my-button" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop">
-                                    اضافه سند تسليم بضاعه
+                                    اضف سند استلام بضاعه
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                                 <button type="button" class="btn ms-3 my-button">
@@ -114,6 +114,8 @@
                                 <table id="basic-datatables" class="display table table-striped table-hover">
                                     <thead>
                                         <tr class="firstcol">
+                                            <th> <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                            </th>
                                             <th>المندوب</th>
                                             <th>العميل</th>
                                             <th>تاريخ الانشاء</th>
@@ -126,6 +128,7 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td> </td>
                                             <td>Fiona Green</td>
                                             <td>Chief Operating Officer (COO)</td>
                                             <td>San Francisco</td>
@@ -135,6 +138,7 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td> </td>
                                             <td>Shou Itou</td>
                                             <td>Regional Marketing</td>
                                             <td>Tokyo</td>
@@ -156,6 +160,7 @@
 </div>
 
 
+
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -163,7 +168,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title text-end flex-row-reverse" id="staticBackdropLabel">
-                    اضافه سند تسليم بضاعه
+                    اضافه سند استلام بضاعه
                 </h5>
             </div>
             <div class="modal-body">
@@ -173,9 +178,15 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="field1 text-end"> المنشأ</label>
-                                    <input type="text" id="field1" formControlName="field1" class="form-control"
-                                        placeholder="اسم المنشأ" />
+                                    <label for="location" class="form-label">المنشأ</label>
+                                    <div class="input-group">
+                                        <select class="form-select form-control" id="location">
+                                            <option selected>قم بإختيار المنشأ</option>
+                                            <option value="1">المنشأ 1</option>
+                                            <option value="2">المنشأ 2</option>
+                                            <option value="3">المنشأ 3</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -198,10 +209,15 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="field4 text-end">العميل
-                                    </label>
-                                    <input type="text" id="field4" formControlName="field4" class="form-control"
-                                        placeholder="قم باختيار العميل" />
+                                    <label for="location" class="form-label">العميل</label>
+                                    <div class="input-group">
+                                        <select class="form-select form-control" id="location">
+                                            <option selected>قم بإختيار العميل</option>
+                                            <option value="1">العميل 1</option>
+                                            <option value="2">العميل 2</option>
+                                            <option value="3">العميل 3</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -209,26 +225,37 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="field5 text-end"> المندوب</label>
-                                    <input type="text" id="field5" formControlName="field5" class="form-control"
-                                        placeholder="فم باختيار المندوب" />
+                                    <label for="location" class="form-label">المندوب</label>
+                                    <div class="input-group">
+                                        <select class="form-select form-control" id="location">
+                                            <option selected>قم بإختيار المندوب</option>
+                                            <option value="1">المندوب 1</option>
+                                            <option value="2">المندوب 2</option>
+                                            <option value="3">المندوب 3</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="field6 text-end">فريق البيع
-                                    </label>
-                                    <input type="date" id="field6" formControlName="field6" class="form-control"
-                                        placeholder="قم بإختيار العقود" />
+                                    <label for="location" class="form-label">فريق البيع</label>
+                                    <div class="input-group">
+                                        <select class="form-select form-control" id="location">
+                                            <option selected>قم بإختيار العقود</option>
+                                            <option value="1">فريق البيع 1</option>
+                                            <option value="2">فريق البيع 2</option>
+                                            <option value="3">فريق البيع 3</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="field7 text-end">رقم طلب شراء العميل
+                                    <label for="field7 text-end">رقم طلب الاستلام
                                     </label>
                                     <input type="date" id="field7" formControlName="field7" class="form-control"
-                                        placeholder="رقم طلب شراء العميل" />
+                                        placeholder="رقم طلب الاستلام" />
                                 </div>
                             </div>
                         </div>
@@ -253,11 +280,30 @@
 
 
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="field12 text-end"> المستودع </label>
-                                    <input type="text" id="field12" formControlName="field12" class="form-control"
-                                        placeholder="اسم الموظف" />
+                                    <label for="location" class="form-label">مركز المورد</label>
+                                    <div class="input-group">
+                                        <select class="form-select form-control" id="location">
+                                            <option selected>قم بإختيار مركز المورد</option>
+                                            <option value="1">مركز المورد 1</option>
+                                            <option value="2">مركز المورد 2</option>
+                                            <option value="3">مركز المورد 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="location" class="form-label">المستودع</label>
+                                    <div class="input-group">
+                                        <select class="form-select form-control" id="location">
+                                            <option selected>قم بإختيار المستودع</option>
+                                            <option value="1">المستودع 1</option>
+                                            <option value="2">المستودع 2</option>
+                                            <option value="3">المستودع 3</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
