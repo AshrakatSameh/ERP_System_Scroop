@@ -31,16 +31,24 @@ export class SidebarComponent {
     //projects toggle
 
     projectsMovementSub :true,
-    contractsMovementSub:true
-  };
-  
-  isCollapsed2: { [key: string]: boolean } = {
+    contractsMovementSub:true,
+
+    // for warehouse
     warehouseMovementSub: true,
     warehouseManagersSub: true,
     typeSub: true,
     warehouseReportsSub: true,
     settingsSub2: true,
+   
   };
+  
+  // isCollapsed2: { [key: string]: boolean } = {
+  //   warehouseMovementSub: true,
+  //   warehouseManagersSub: true,
+  //   typeSub: true,
+  //   warehouseReportsSub: true,
+  //   settingsSub2: true,
+  // };
 
   openSubmenus: { [key: string]: boolean } = {};
 
@@ -67,9 +75,9 @@ export class SidebarComponent {
 
 
   
-  toggleCollapse2(section: string) {
-    this.isCollapsed2[section] = !this.isCollapsed2[section];
-  }
+  // toggleCollapse2(section: string) {
+  //   this.isCollapsed2[section] = !this.isCollapsed2[section];
+  // }
 
 
 }
