@@ -17,6 +17,13 @@ export class SidebarComponent {
     settingsSub: true,
   };
   
+  isCollapsed2: { [key: string]: boolean } = {
+    warehouseMovementSub: true,
+    warehouseManagersSub: true,
+    typeSub: true,
+    warehouseReportsSub: true,
+    settingsSub2: true,
+  };
 
   openSubmenus: { [key: string]: boolean } = {};
 
@@ -38,5 +45,14 @@ export class SidebarComponent {
   toggleCollapse(section: string) {
     this.isCollapsed[section] = !this.isCollapsed[section];
   }
+
+ 
+
+
+  
+  toggleCollapse2(section: string) {
+    this.isCollapsed2[section] = !this.isCollapsed2[section];
+  }
+
 
 }

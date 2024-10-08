@@ -33,6 +33,12 @@ import { BoxAndCommitmentComponent } from './components/sales/salesResponsible/b
 import { ContactsComponent } from './components/sales/clients/contacts/contacts.component';
 import { BranchesAndLocationsComponent } from './components/sales/clients/branches-and-locations/branches-and-locations.component';
 import { ClientsComponent } from './components/sales/clients/clients/clients.component';
+import { WorkServecesReqsComponent } from './components/workServeces/work-service-Reqs/work-serveces-reqs/work-serveces-reqs.component';
+import { WorkServecesSectionsComponent } from './components/workServeces/work-services-sections/work-serveces-sections/work-serveces-sections.component';
+import { WorkServecesTypeComponent } from './components/workServeces/Work-services-type/work-serveces-type/work-serveces-type.component';
+import { WorkServecesCategoryComponent } from './components/workServeces/work-serveces-category/work-serveces-category.component';
+import { CommonModule } from '@angular/common';
+import { DocumentOperationsComponent } from './components/workServeces/DocumentOperations/document-operations/document-operations.component';
 
 @NgModule({
   declarations: [
@@ -60,12 +66,18 @@ import { ClientsComponent } from './components/sales/clients/clients/clients.com
     BoxAndCommitmentComponent,
     ContactsComponent,
     BranchesAndLocationsComponent,
-    ClientsComponent
+    ClientsComponent,
+    WorkServecesReqsComponent,
+    WorkServecesSectionsComponent,
+    WorkServecesTypeComponent,
+    WorkServecesCategoryComponent,
+    DocumentOperationsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    CommonModule
     // TranslateModule.forRoot({
     //   defaultLanguage: 'ar',
 

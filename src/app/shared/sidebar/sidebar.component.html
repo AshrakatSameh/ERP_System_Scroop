@@ -17,12 +17,12 @@
             <!-- <h4 class="text-section">Components</h4> -->
           </li>
           <li class="nav-item">
-            <a data-bs-toggle="collapse" href="#base">
+            <a data-bs-toggle="collapse" href="#type">
               <i class="fas fa-layer-group"></i>
               <p>المبيعات</p>
               <span class="caret"></span>
             </a>
-            <div class="collapse" id="base">
+            <div class="collapse" id="type">
               <ul class="nav nav-collapse p-0 no-bullets">
           
                 <!-- Sales Movement -->
@@ -33,14 +33,14 @@
                   </a>
                   <div [ngClass]="{'collapse': isCollapsed['salesMovementSub']}" id="salesMovementSub">
                     <ul class="nav nav-collapse sub-nav ">
-                      <a href="/sales">
+                      <a routerLink="/sales">
                         <span class="sub-item">عروض و طلبات البيع</span>
                       </a>
-                      <li><a href="/goodsVoucher"><span class="sub-item">سند تسليم بضاعة</span></a></li>
-                      <li><a href="/salesInvoices"><span class="sub-item">فواتير المبيعات</span></a></li>
-                      <li><a href="/receiveVoucher"><span class="sub-item">سند استيلام البضاعه</span></a></li>
-                      <li><a href="/returnInvoices"><span class="sub-item">فواتير المرتجعات</span></a></li>
-                      <li><a href="/collections"><span class="sub-item">التحصيلات</span></a></li>
+                      <li><a routerLink="/goodsVoucher"><span class="sub-item">سند تسليم بضاعة</span></a></li>
+                      <li><a routerLink="/salesInvoices"><span class="sub-item">فواتير المبيعات</span></a></li>
+                      <li><a routerLink="/receiveVoucher"><span class="sub-item">سند استيلام البضاعه</span></a></li>
+                      <li><a routerLink="/returnInvoices"><span class="sub-item">فواتير المرتجعات</span></a></li>
+                      <li><a routerLink="/collections"><span class="sub-item">التحصيلات</span></a></li>
                     </ul>
                   </div>
                 </li>
@@ -56,7 +56,7 @@
                       <li><a href="#"><span class="sub-item">المناديب</span></a></li>
                       <li><a href="#"><span class="sub-item">المشرفين والمدراء</span></a></li>
                       <li><a href="#"><span class="sub-item">الفرق</span></a></li>
-                      <li><a href="/boxAndCommitment"><span class="sub-item">العهدوالصندوق</span></a></li>
+                      <li><a routerLink="/boxAndCommitment"><span class="sub-item">العهدوالصندوق</span></a></li>
                      
                     </ul>
                   </div>
@@ -70,13 +70,13 @@
                   </a>
                   <div [ngClass]="{'collapse': isCollapsed['clientsSub']}" id="clientsSub">
                     <ul class="nav nav-collapse sub-nav">
-                      <li><a href="/contacts"><span class="sub-item">جهات الإتصال</span></a></li>
-                      <li><a href="/clients"><span class="sub-item">العملاء</span></a></li>
-                      <li><a href="#"><span class="sub-item">قوائم الأسعار</span></a></li>
-                      <li><a href="/Tag"><span class="sub-item">الوسم</span></a></li>
-                      <li><a href="/branchesAndLocationsOfClients"><span class="sub-item">مواقع وفروع العملاء</span></a></li>
-                      <li><a href="/repaymentPeriod"><span class="sub-item">فترة السداد</span></a></li>
-                      <li><a href="/repaymentWay"><span class="sub-item">طريقة السداد</span></a></li>
+                      <li><a routerLink="/contacts"><span class="sub-item">جهات الإتصال</span></a></li>
+                      <li><a routerLink="/clients"><span class="sub-item">العملاء</span></a></li>
+                      <li><a routerLink="#"><span class="sub-item">قوائم الأسعار</span></a></li>
+                      <li><a routerLink="/Tag"><span class="sub-item">الوسم</span></a></li>
+                      <li><a routerLink="/branchesAndLocationsOfClients"><span class="sub-item">مواقع وفروع العملاء</span></a></li>
+                      <li><a routerLink="/repaymentPeriod"><span class="sub-item">فترة السداد</span></a></li>
+                      <li><a routerLink="/repaymentWay"><span class="sub-item">طريقة السداد</span></a></li>
                     </ul>
                   </div>
                 </li>
@@ -148,15 +148,37 @@
           <li class="nav-item">
             <a data-bs-toggle="collapse" href="#forms">
               <i class="fas fa-pen-square"></i>
-              <p>Forms</p>
+              <p>خدمات الأعمال</p>
               <span class="caret"></span>
             </a>
             <div class="collapse" id="forms">
               <ul class="nav nav-collapse">
                 <li>
-                  <a href="forms/forms.html">
-                    <span class="sub-item">Basic Form</span>
-                  </a>
+                  <a routerLink="/workServicesrequests"><span class="sub-item">طلبات خدمات العمل</span></a>
+                </li>
+                <li>
+                  <a routerLink="forms/forms.html"><span class="sub-item">أمر العمل</span></a>
+                </li>
+                <li>
+                  <a routerLink="/workServicesSections"><span class="sub-item">أقسام خدمات العمل</span></a>
+                </li>
+                <li>
+                  <a routerLink="/workServicesType"><span class="sub-item">نوع خدمات العمل</span></a>
+                </li>
+                <li>
+                  <a routerLink="/workServicesCategory"><span class="sub-item">فئة خدمات العمل</span></a>
+                </li>
+                <li>
+                  <a routerLink="forms/forms.html"><span class="sub-item">الموافقات لخدمات العمل</span></a>
+                </li>
+                <li>
+                  <a routerLink="/documentOperations"><span class="sub-item">توثيق العمليات</span></a>
+                </li>
+                <li>
+                  <a routerLink="forms/forms.html"><span class="sub-item">تقارير خدمات العمل</span></a>
+                </li>
+                <li>
+                  <a routerLink="forms/forms.html"><span class="sub-item">اعدادات خدمات العمل</span></a>
                 </li>
               </ul>
             </div>
@@ -187,7 +209,7 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a data-bs-toggle="collapse" href="#maps">
               <i class="fas fa-map-marker-alt"></i>
               <p>Maps</p>
@@ -207,28 +229,107 @@
                 </li>
               </ul>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a data-bs-toggle="collapse" href="#charts">
-              <i class="far fa-chart-bar"></i>
-              <p>Charts</p>
+            <a data-bs-toggle="collapse" href="#inventoryCollapse">
+              <i class="fas fa-layer-group"></i>
+              <p>المخزون</p>
               <span class="caret"></span>
             </a>
-            <div class="collapse" id="charts">
-              <ul class="nav nav-collapse">
-                <li>
-                  <a href="charts/charts.html">
-                    <span class="sub-item">Chart Js</span>
+            <div class="collapse" id="inventoryCollapse">
+              <ul class="nav nav-collapse p-0 no-bullets">
+                <!-- Units -->
+                <li class="collapsed-item">
+                  <a (click)="toggleCollapse2('warehouseMovementSub')" aria-expanded="false" aria-controls="warehouseMovementSub">
+                    <span class="toggle-icon">{{ isCollapsed2['warehouseMovementSub'] ? '+' : '-' }}</span>
+                    <span class="sub-item">الوحدة</span>
                   </a>
+                  <div [ngClass]="{'collapse': isCollapsed2['warehouseMovementSub']}" id="warehouseMovementSub">
+                    <ul class="nav nav-collapse sub-nav">
+                      <li><a routerLink="/"><span class="sub-item">فئات الوحدة</span></a></li>
+                      <li><a routerLink="/"><span class="sub-item">الوحدة</span></a></li>
+                    </ul>
+                  </div>
                 </li>
-                <li>
-                  <a href="charts/sparkline.html">
-                    <span class="sub-item">Sparkline</span>
+          
+                <!-- types -->
+                <li class="collapsed-item">
+                  <a (click)="toggleCollapse2('warehouseManagersSub')" aria-expanded="false" aria-controls="warehouseManagersSub">
+                    <span class="toggle-icon">{{ isCollapsed2['warehouseManagersSub'] ? '+' : '-' }}</span>
+                    <span class="sub-item">الأصناف</span>
                   </a>
+                  <div [ngClass]="{'collapse': isCollapsed2['warehouseManagersSub']}" id="warehouseManagersSub">
+                    <ul class="nav nav-collapse sub-nav">
+                      <li><a href="#"><span class="sub-item">فئة الصنف</span></a></li>
+                      <li><a href="#"><span class="sub-item">الأصناف</span></a></li>
+                      <li><a href="#"><span class="sub-item">الماركات</span></a></li>
+                      <li><a routerLink="/boxAndCommitment"><span class="sub-item">مجموعة الصنف</span></a></li>
+                      <li><a href="#"><span class="sub-item">نوع الصنف</span></a></li>
+                      <li><a href="#"><span class="sub-item">حركة المخزن</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+          
+                <!-- Clients -->
+                <li class="collapsed-item">
+                  <a (click)="toggleCollapse2('typeSub')" aria-expanded="false" aria-controls="typeSub">
+                    <span class="toggle-icon">{{ isCollapsed2['typeSub'] ? '+' : '-' }}</span>
+                    <span class="sub-item">المستودعات</span>
+                  </a>
+                  <div [ngClass]="{'collapse': isCollapsed2['typeSub']}" id="typeSub">
+                    <ul class="nav nav-collapse sub-nav">
+                      <li><a routerLink=""><span class="sub-item">فئة المستودعات</span></a></li>
+                      <li><a routerLink=""><span class="sub-item">المستودعات</span></a></li>
+                      <li><a routerLink="#"><span class="sub-item">أماكن التخزين</span></a></li>
+                      <li><a routerLink="/"><span class="sub-item">النقل بين المستودعات</span></a></li>
+                      <li><a routerLink="/"><span class="sub-item">جرد المستودع</span></a></li>
+                      <li><a routerLink="/"><span class="sub-item">تقارير المستودعات</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+          
+                <!-- Settings -->
+                <li class="collapsed-item">
+                  <a (click)="toggleCollapse2('settingsSub2')" aria-expanded="false" aria-controls="settingsSub2">
+                    <span class="toggle-icon">{{ isCollapsed2['settingsSub2'] ? '+' : '-' }}</span>
+                    <span class="sub-item">اعدادات</span>
+                  </a>
+                  <div [ngClass]="{'collapse': isCollapsed2['settingsSub2']}" id="settingsSub2">
+                    <ul class="nav nav-collapse sub-nav">
+                      <li><a href="#">اعدادات عامة</a></li>
+                      <li><a href="#">اعدادات الخصوصية</a></li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
           </li>
+          
+          <!-- <li class="nav-item">
+            <a data-bs-toggle="collapse" href="#charts">
+              <i class="far fa-chart-bar"></i>
+              <p>المخزون</p>
+              <span class="caret"></span>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav nav-collapse">
+                <li><a href="charts/charts.html">
+                    <span class="sub-item">الوحده</span></a>
+                </li>
+                <li>
+                  <a href="charts/sparkline.html">
+                    <span class="sub-item">الأصناف</span>
+                  </a>
+                </li>
+                <li><a href="charts/charts.html">
+                  <span class="sub-item">المستودعات</span></a>
+              </li>
+              <li><a href="charts/charts.html">
+                <span class="sub-item">الأعدادات</span></a>
+            </li>
+              </ul>
+            </div>
+          </li> -->
           <li class="nav-item">
             <a href="widgets.html">
               <i class="fas fa-desktop"></i>
