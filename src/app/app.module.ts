@@ -36,6 +36,7 @@ import { BoxAndCommitmentComponent } from './components/sales/salesResponsible/b
 import { ContactsComponent } from './components/sales/clients/contacts/contacts.component';
 import { BranchesAndLocationsComponent } from './components/sales/clients/branches-and-locations/branches-and-locations.component';
 import { ClientsComponent } from './components/sales/clients/clients/clients.component';
+import { UnitCategoryComponent } from './components/stock/stock/unit-category/unit-category.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { ClientsComponent } from './components/sales/clients/clients/clients.com
     BoxAndCommitmentComponent,
     ContactsComponent,
     BranchesAndLocationsComponent,
-    ClientsComponent
+    ClientsComponent,
+    UnitCategoryComponent
   ],
   imports: [
     BrowserModule,

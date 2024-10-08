@@ -29,6 +29,7 @@ import { BoxAndCommitmentComponent } from './components/sales/salesResponsible/b
 import { ContactsComponent } from './components/sales/clients/contacts/contacts.component';
 import { BranchesAndLocationsComponent } from './components/sales/clients/branches-and-locations/branches-and-locations.component';
 import { ClientsComponent } from './components/sales/clients/clients/clients.component';
+import { UnitCategoryComponent } from './components/stock/stock/unit-category/unit-category.component';
 
 const routes: Routes = [
   {path:'forgetPassword', component: ForgetPasswordComponent},
@@ -61,7 +62,8 @@ const routes: Routes = [
   {path:'boxAndCommitment' , component: BoxAndCommitmentComponent},
   {path:'contacts', component: ContactsComponent},
   {path:'branchesAndLocationsOfClients', component:BranchesAndLocationsComponent},
-  {path:'clients', component: ClientsComponent}
+  {path:'clients', component: ClientsComponent},
+  {path:'unitCategory',component:UnitCategoryComponent}
 ];
 
 @NgModule({
