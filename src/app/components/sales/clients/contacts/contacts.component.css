@@ -141,7 +141,7 @@ tr, th, td {
 
 .scroll-buttons-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   overflow-x: auto;
   white-space: nowrap;
   padding: 10px 0;
@@ -178,12 +178,6 @@ tr, th, td {
   width: 13rem;
   margin-left: 3%;
 }
-
-.my-button2{
-  background-color: #E7E7EA;
-  color:#224273;
-  
-}
 .my-button4{
   background-color: #224273;
   color:#F7fBFF;
@@ -191,79 +185,64 @@ tr, th, td {
   margin-left: 3%;
   margin-bottom: 2%;
 }
-
-
-/* comments part style */
-.comment-section {
-    max-width: 700px;
-    margin: 0 auto;
-  }
+.my-button2{
+  background-color: #E7E7EA;
+  color:#224273;
   
-  .comment-item {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-  }
-  
-  .comment-actions button {
-    font-size: 0.9rem;
-  }
-  
-  .comment-item img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  input.form-control , select.form-control{
-    border-radius: 10px;
-  }
-  
-  .card {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  .add-comment-section {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
-  .add-comment-section .card {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-  }
-  
-  /* .add-comment-section .form-control , .form-select{
-    border-radius: 20px;
-  } */
-  
-  .add-comment-section .btn-link {
-    color: #6c757d;
-  }
-  
-  .add-comment-section .btn-primary {
-    border-radius: 8px;
-  }
-  .rounded-circle{
-    width: 50px;
-    height: 50px;
-  }
-  
-  .textt , input{
-    text-align: right;
-  }
-  /* المرفقات */
-  .custom-file-upload {
-    border: 2px dashed #ddd;
-    padding: 20px;
-    text-align: center;
-    color: #999;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  .custom-file-upload:hover {
-    border-color: #ccc;
-  }
-  
-
-  select.form-select{
+}
+select.form-select{
     background-position: left;
   }
+
+  .locationButton{
+    margin-top: 2.1rem;
+}
+
+/*  */
+.file-upload-area {
+  border: 2px dashed #d3d3d3;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  height: 150px;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+.upload-placeholder {
+  color: #6c757d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.upload-placeholder i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.upload-placeholder p {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+}
+
+.profile-picture img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.ml-3 {
+  margin-left: 16px;
+}
+
+.text-center {
+  text-align: center;
+}

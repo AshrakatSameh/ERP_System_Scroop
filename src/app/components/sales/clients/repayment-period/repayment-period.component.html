@@ -37,11 +37,11 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header d-flex justify-content-between align-items-center flex-row-reverse">
-                            <h4 class="card-title text-end">الوسم</h4>
+                            <h4 class="card-title text-end">فترة السداد</h4>
                             <div class="button-group d-flex justify-content-start">
                                 <button type="button" class="btn my-button" data-bs-toggle="modal"
                                     data-bs-target="#staticBackdrop">
-                                    اضف الوسم
+                                    اضف فترة سداد
                                     <i class="fa-solid fa-plus"></i>
                                 </button>
                                 <button type="button" class="btn ms-3 my-button">
@@ -117,11 +117,11 @@
                                           
                                             <th> <i class="fa-solid fa-arrow-right-arrow-left"></i>
                                             </th>
-                                            <th>ملف</th>
+                                            <th>فترة السداد</th>
                                             <th>وصف فترة السداد</th>
                                             <th>المنشأ</th>
                                             <th>تاريخ الإنشاء</th>
-                                            <th>اسم الوسم</th>
+                                            <th>اسم فترة السداد</th>
                                             <th class="firstcolright">
                                                 <input type="checkbox" class="large-checkbox" />
                                             </th>
@@ -142,12 +142,11 @@
                                         </tr>
                                         <tr>
                                             <td> </td>
-                                            <td>Shou Itou</td>
-                                            <td>2011/08/14</td>
-                                            <td>Regional Marketing</td>
-                                            <td>Tokyo</td>
-                                            <td>20</td>
-                                            
+                                            <td>48</td>
+                                            <td>San Francisco</td>
+                                            <td>Chief Operating Officer (COO)</td>
+                                            <td>2010/03/11</td>
+                                            <td>Fiona Green</td>
                                             <td> <input type="checkbox" class="large-checkbox" />
                                             </td>
                                         </tr>
@@ -163,6 +162,7 @@
     </div>
 </div>
 
+
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -170,7 +170,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title text-end flex-row-reverse" id="staticBackdropLabel">
-                    اضافه الوسم
+                    اضافه فترة السداد
                 </h5>
             </div>
             <div class="modal-body">
@@ -180,9 +180,9 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="field4 text-end"> اسم الوسم</label>
+                                    <label for="field4 text-end"> اسم فترة السداد</label>
                                     <input type="text" id="field3" formControlName="field3" class="form-control"
-                                        placeholder="اسم الوسم" />
+                                        placeholder="اسم فترة السداد" />
                                 </div>
                             </div>
                        
@@ -211,6 +211,15 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="field4 text-end"> فترة السداد من تاريخ الفاتورة</label>
+                                    <input type="text" id="field3" formControlName="field3" class="form-control"
+                                        placeholder="عدد الأيام من تاريخ الفاتورة" />
+                                </div>
+                            </div>
+                        </div>
                      
                          <!-- ألمرفقات -->
                             <div class="container mt-5">
@@ -227,8 +236,8 @@
                           </div>
                           
                           <div class="row mb-3">
-                            <div class="col-md-12">
-                              <label for="Textarea1">وصف جهه الإتصال</label>
+                            <div class="col-md-12 ">
+                              <label for="Textarea1">وصف فترة السداد</label>
                               <textarea class="form-control" id="Textarea1" rows="3"></textarea>
                             </div>
                           </div>

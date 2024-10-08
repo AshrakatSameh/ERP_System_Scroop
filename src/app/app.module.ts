@@ -30,6 +30,12 @@ import { ProjectsComponent } from './components/projects-and-contracts/projects/
 import { TypeOfProjectsComponent } from './components/projects-and-contracts/type-of-projects/type-of-projects.component';
 import { ContractsComponent } from './components/projects-and-contracts/contracts/contracts.component';
 import { TypeOfContractsComponent } from './components/projects-and-contracts/type-of-contracts/type-of-contracts.component';
+import { RepaymentPeriodComponent } from './components/sales/clients/repayment-period/repayment-period.component';
+import { RepaymentWayComponent } from './components/sales/clients/repayment-way/repayment-way.component';
+import { BoxAndCommitmentComponent } from './components/sales/salesResponsible/box-and-commitment/box-and-commitment.component';
+import { ContactsComponent } from './components/sales/clients/contacts/contacts.component';
+import { BranchesAndLocationsComponent } from './components/sales/clients/branches-and-locations/branches-and-locations.component';
+import { ClientsComponent } from './components/sales/clients/clients/clients.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +61,13 @@ import { TypeOfContractsComponent } from './components/projects-and-contracts/ty
     ReturnInvoicesComponent,
     TagComponent,
     CategoryEmployeeRequestsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    RepaymentPeriodComponent,
+    RepaymentWayComponent,
+    BoxAndCommitmentComponent,
+    ContactsComponent,
+    BranchesAndLocationsComponent,
+    ClientsComponent
   ],
   imports: [
     BrowserModule,
