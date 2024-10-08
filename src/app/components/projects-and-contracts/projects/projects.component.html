@@ -866,6 +866,44 @@
                 </div>
             </div>
 
+            <!-- show Surveys -->
+                  
+            <div *ngIf="selectedButton !== null">
+              <div *ngIf="selectedButton === 2">
+            <div class="row">
+              <div class="col-md-9">
+                  <div class="form-group">
+                      <label for="field7 text-end">النماذج
+                      </label>
+                      <input type="text" id="field7" formControlName="field7"
+                          class="form-control" placeholder="مؤشر الأداء الرئيسي 1" />
+                  </div>
+              </div>
+              <div class="col-md-3 mb-3 customButton">
+                  <div class="col-md-12 text-start">
+                      <button class="btn btn-outline-primary me-3">الغاء</button>
+                      <button class="btn btn-primary m-2">حفظ</button>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    <input type="text" id="field7" formControlName="field7"
+                        class="form-control" placeholder="مؤشر الأداء الرئيسي 2" />
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 mt-1">
+                <div class="col-md-12 text-start">
+                    <button class="btn btn-outline-primary me-3">الغاء</button>
+                    <button class="btn btn-primary m-2">حفظ</button>
+                </div>
+            </div>
+        </div>
+          </div>
+          </div>
+
+
             <!-- contract's Money -->
 
             <div *ngIf="selectedButton !== null">
@@ -1218,24 +1256,27 @@
         </div>
 
 
-        <div class="container mt-5" >
-          <h5 class="mb-3">المرفقات</h5>
-          <button class="btn btn-link text-muted p-1">
-            <i class="fa fa-microphone"></i>
-          </button>
-
-          <button class="btn btn-link text-muted p-1">
-            <i class="fa fa-paperclip"></i>
-          </button>
-
-          <div class="custom-file-upload" >
-            <i class="fas fa-cloud-upload-alt fa-3x mb-3"></i>
-            <p>حدد ملفًا أو قم بالسحب والإسقاط هنا</p>
-            <small class="text-muted"
-              >JPG, PNG or PDF; file size no more than 10MB</small
-            >
+        <div class="container mt-3 mb-3">
+          <div class="row">
+            <div class="col-12 d-flex justify-content-between align-items-center flex-row-reverse">
+              <div class="file-upload-area d-flex flex-grow-1">
+                <label for="file-upload" class="custom-file-upload w-100">
+                  <input type="file" id="file-upload" />
+                  <div class="upload-placeholder">
+                    <i class="fa fa-cloud-upload-alt"></i>
+                    <span>حدد ملفًا أو قم بالسحب والإسقاط هنا</span>
+                    <p>JPG, PNG or, file size no more than 10MB</p>
+                  </div>
+                </label>
+              </div>
+              <div class="profile-picture ml-3">
+                <img src="../../../../../assets/images/images.jpg" alt="صوره شخصيه" class="rounded-circle" />
+                <p class="text-center mt-2">صوره شخصيه</p>
+              </div>
+            </div>
           </div>
         </div>
+        
 
            
 
