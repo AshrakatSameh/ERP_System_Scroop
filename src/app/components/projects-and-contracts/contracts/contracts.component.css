@@ -224,6 +224,7 @@ tr, th, tr {
   background-color: #224273 !important; /* Custom hover color */
   color: white !important; /* Custom hover text color */
 }
+
 .scroll-buttons-container {
   display: flex;
   flex-direction: row;
@@ -251,7 +252,6 @@ tr, th, tr {
 .scroll-buttons-container::-webkit-scrollbar {
   display: none;
 }
-
 
 .custom-file-upload {
   border: 2px dashed #ddd;
@@ -327,6 +327,44 @@ input.form-control {
   text-align: right;
 }
 
+.chat-name {
+  font-weight: bold;
+  color: #075e54; /* WhatsApp name color */
+  margin-right: 10px; /* Reduce the space between name and time */
+}
+
+.chat-time {
+  font-size: 0.8rem;
+  color: #666; /* Gray color for date and time */
+  white-space: nowrap; /* Prevent breaking the date onto two lines */
+  margin-left: 5px; /* Reduce the space between name and time */
+}
+
+/* Styling for the chat card (unchanged) */
+.chat-card {
+  background-color: #f0f0f0; /* Light gray background for chat bubble */
+  border-radius: 15px; /* Rounded corners like a chat bubble */
+  padding: 10px;
+  max-width: 60%; /* Set a maximum width for the chat bubble */
+  margin-bottom: 10px; /* Space between chat bubbles */
+  word-wrap: break-word; /* Prevent text overflow */
+  margin-left: auto; /* Align the card to the right side */
+}
+/* Styling for the message text */
+.chat-message {
+  color: #333; /* Darker text for the message */
+  font-size: 1rem;
+  line-height: 1.5;
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
+/* Adjust padding to ensure the chat looks visually like WhatsApp */
+.chat-card .card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
 /* Adjust container padding */
 .container {
   padding-left: 0;
@@ -350,50 +388,24 @@ input.form-control {
   height: 40px; /* Set a fixed height for demonstration */
 }
 
-.file-upload-area {
-  border: 2px dashed #d3d3d3;
-  border-radius: 8px;
-  text-align: center;
-  padding: 20px;
-  background-color: #f8f9fa;
-  height: 150px;
+  /* font */
+  h2,
+  h3,
+  h5,
+a,
+h4,
+p,
+label,
+input,
+button,
+tr, th, tr {
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
 }
 
-.custom-file-upload input[type="file"] {
-  display: none;
-}
-
-.upload-placeholder {
-  color: #6c757d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 16px;
-}
-
-.upload-placeholder i {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.upload-placeholder p {
-  margin: 0;
-  font-size: 12px;
-  color: #999;
-}
-
-.profile-picture img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.ml-3 {
-  margin-left: 16px;
-}
-
-.text-center {
-  text-align: center;
+.customButton{
+  margin-top: 2.2rem;
 }

@@ -27,6 +27,9 @@ import { ReceiveVoucherComponent } from './components/sales/receive-voucher/rece
 import { ReturnInvoicesComponent } from './components/sales/return-invoices/return-invoices.component';
 import { TagComponent } from './components/sales/clients/tag/tag.component';
 import { ProjectsComponent } from './components/projects-and-contracts/projects/projects.component';
+import { TypeOfProjectsComponent } from './components/projects-and-contracts/type-of-projects/type-of-projects.component';
+import { ContractsComponent } from './components/projects-and-contracts/contracts/contracts.component';
+import { TypeOfContractsComponent } from './components/projects-and-contracts/type-of-contracts/type-of-contracts.component';
 import { RepaymentPeriodComponent } from './components/sales/clients/repayment-period/repayment-period.component';
 import { RepaymentWayComponent } from './components/sales/clients/repayment-way/repayment-way.component';
 import { BoxAndCommitmentComponent } from './components/sales/salesResponsible/box-and-commitment/box-and-commitment.component';
@@ -54,6 +57,10 @@ import { DocumentOperationsComponent } from './components/workServeces/DocumentO
     EmployeeRequestsComponent,
     TypeEmployeeRequestsComponent,
     CategoryEmployeeRequestsComponent,
+    ProjectsComponent,
+    TypeOfProjectsComponent,
+    ContractsComponent,
+    TypeOfContractsComponent,
     SalesInvoicesComponent,
     CollectionsComponent,
     ReceiveVoucherComponent,

@@ -1,29 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  selector: 'app-contracts',
+  templateUrl: './contracts.component.html',
+  styleUrls: ['./contracts.component.css']
 })
-export class ProjectsComponent implements OnInit {
+export class ContractsComponent {
+  isFirstButtonClicked = false;
+  isSecondButtonClicked = false;
 
-  ngOnInit(): void {
-    this.toggleTableonClick();
-    
-  }
+  istableview = true;
+  iscardsview=false;
 
   isMapView = false;
 
   toggleMap(){
     this.isMapView = true
   }
-  
-
-  isFirstButtonClicked = false;
-  isSecondButtonClicked = false;
-
-  istableview = true;
-  iscardsview=false;
 
   toggleFirstButtonClick() {
     this.isFirstButtonClicked = true;
@@ -61,7 +54,7 @@ export class ProjectsComponent implements OnInit {
     this.isRowRemoved = true;
   }
 
-  buttons=['التفاصيل','المهام','الاستبيانات','التعليقات','مالية المشروع']
+  buttons=['التفاصيل','المهام','الاستبيانات','التعليقات','مالية العقد','اقساط العقد']
 
   selectedButton: number | null = null; // To track which button is clicked
 
@@ -69,4 +62,5 @@ export class ProjectsComponent implements OnInit {
   showContent(index: number): void {
     this.selectedButton = index;
   }
+
 }
