@@ -1296,7 +1296,7 @@ body {
 .sidebar .nav-collapse li a,
 .sidebar[data-background-color=white] .nav-collapse li a {
    margin-bottom: 3px !important;
-   padding: 10px 25px !important
+   padding: 10px 20px !important
 }
 
 .sidebar .nav-collapse li a .sub-item,

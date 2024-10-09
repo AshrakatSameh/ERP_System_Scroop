@@ -31,6 +31,12 @@ import { BranchesAndLocationsComponent } from './components/sales/clients/branch
 import { ClientsComponent } from './components/sales/clients/clients/clients.component';
 import { UnitCategoryComponent } from './components/stock/stock/unit-category/unit-category.component';
 
+import { WorkServecesReqsComponent } from './components/workServeces/work-service-Reqs/work-serveces-reqs/work-serveces-reqs.component';
+import { WorkServecesSectionsComponent } from './components/workServeces/work-services-sections/work-serveces-sections/work-serveces-sections.component';
+import { WorkServecesTypeComponent } from './components/workServeces/Work-services-type/work-serveces-type/work-serveces-type.component';
+import { WorkServecesCategoryComponent } from './components/workServeces/work-serveces-category/work-serveces-category.component';
+import { DocumentOperationsComponent } from './components/workServeces/DocumentOperations/document-operations/document-operations.component';
+
 const routes: Routes = [
   {path:'forgetPassword', component: ForgetPasswordComponent},
   {path:'registration', component:RegisterComponent},
@@ -63,7 +69,12 @@ const routes: Routes = [
   {path:'contacts', component: ContactsComponent},
   {path:'branchesAndLocationsOfClients', component:BranchesAndLocationsComponent},
   {path:'clients', component: ClientsComponent},
-  {path:'unitCategory',component:UnitCategoryComponent}
+  {path:'unitCategory',component:UnitCategoryComponent},
+  {path:'workServicesrequests', component: WorkServecesReqsComponent},
+  {path:'workServicesSections', component:WorkServecesSectionsComponent},
+  {path:'workServicesType', component:WorkServecesTypeComponent},
+  {path:'workServicesCategory', component:WorkServecesCategoryComponent},
+  {path:'documentOperations' , component:DocumentOperationsComponent}
 ];
 
 @NgModule({
