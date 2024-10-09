@@ -43,6 +43,15 @@ import { WorkServecesTypeComponent } from './components/workServeces/Work-servic
 import { WorkServecesCategoryComponent } from './components/workServeces/work-serveces-category/work-serveces-category.component';
 import { CommonModule } from '@angular/common';
 import { DocumentOperationsComponent } from './components/workServeces/DocumentOperations/document-operations/document-operations.component';
+import { UnitComponent } from './components/stock/stock/unit/unit.component';
+import { TypeCategoryComponent } from './components/stock/categories/type-category/type-category.component';
+import { BrandsComponent } from './components/stock/categories/brands/brands.component';
+import { CategoryGroupComponent } from './components/stock/categories/category-group/category-group.component';
+import { ItemTypeComponent } from './components/stock/categories/item-type/item-type.component';
+import { StorehouseCategoryComponent } from './components/stock/storehouse/storehouse-category/storehouse-category.component';
+import { StorehouseComponent } from './components/stock/storehouse/storehouse/storehouse.component';
+import { StorageComponent } from './components/stock/storehouse/storage/storage.component';
+import { StorehouseTransportationComponent } from './components/stock/storehouse/storehouse-transportation/storehouse-transportation.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +89,16 @@ import { DocumentOperationsComponent } from './components/workServeces/DocumentO
     WorkServecesSectionsComponent,
     WorkServecesTypeComponent,
     WorkServecesCategoryComponent,
-    DocumentOperationsComponent
+    DocumentOperationsComponent,
+    UnitComponent,
+    TypeCategoryComponent,
+    BrandsComponent,
+    CategoryGroupComponent,
+    ItemTypeComponent,
+    StorehouseCategoryComponent,
+    StorehouseComponent,
+    StorageComponent,
+    StorehouseTransportationComponent
   ],
   imports: [
     BrowserModule,
