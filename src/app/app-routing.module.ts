@@ -29,11 +29,22 @@ import { BoxAndCommitmentComponent } from './components/sales/salesResponsible/b
 import { ContactsComponent } from './components/sales/clients/contacts/contacts.component';
 import { BranchesAndLocationsComponent } from './components/sales/clients/branches-and-locations/branches-and-locations.component';
 import { ClientsComponent } from './components/sales/clients/clients/clients.component';
+import { UnitCategoryComponent } from './components/stock/stock/unit-category/unit-category.component';
+
 import { WorkServecesReqsComponent } from './components/workServeces/work-service-Reqs/work-serveces-reqs/work-serveces-reqs.component';
 import { WorkServecesSectionsComponent } from './components/workServeces/work-services-sections/work-serveces-sections/work-serveces-sections.component';
 import { WorkServecesTypeComponent } from './components/workServeces/Work-services-type/work-serveces-type/work-serveces-type.component';
 import { WorkServecesCategoryComponent } from './components/workServeces/work-serveces-category/work-serveces-category.component';
 import { DocumentOperationsComponent } from './components/workServeces/DocumentOperations/document-operations/document-operations.component';
+import { UnitComponent } from './components/stock/stock/unit/unit.component';
+import { TypeCategoryComponent } from './components/stock/categories/type-category/type-category.component';
+import { BrandsComponent } from './components/stock/categories/brands/brands.component';
+import { CategoryGroupComponent } from './components/stock/categories/category-group/category-group.component';
+import { ItemTypeComponent } from './components/stock/categories/item-type/item-type.component';
+import { StorehouseCategoryComponent } from './components/stock/storehouse/storehouse-category/storehouse-category.component';
+import { StorehouseComponent } from './components/stock/storehouse/storehouse/storehouse.component';
+import { StorageComponent } from './components/stock/storehouse/storage/storage.component';
+import { StorehouseTransportationComponent } from './components/stock/storehouse/storehouse-transportation/storehouse-transportation.component';
 
 const routes: Routes = [
   {path:'forgetPassword', component: ForgetPasswordComponent},
@@ -67,11 +78,22 @@ const routes: Routes = [
   {path:'contacts', component: ContactsComponent},
   {path:'branchesAndLocationsOfClients', component:BranchesAndLocationsComponent},
   {path:'clients', component: ClientsComponent},
+  {path:'unitCategory',component:UnitCategoryComponent},
+  {path:'unit',component:UnitComponent},
+  {path:'brands',component:BrandsComponent},
+  {path:'groupCategory',component:CategoryGroupComponent},
+  {path:'itemType',component:ItemTypeComponent},
+  {path:'typeCategory',component:TypeCategoryComponent},
+  {path:'storehouseCategory',component:StorehouseCategoryComponent},
+  {path:'storehouse',component:StorehouseComponent},
+  {path:'storage',component:StorageComponent},
+  {path:'transportation',component:StorehouseTransportationComponent},
   {path:'workServicesrequests', component: WorkServecesReqsComponent},
   {path:'workServicesSections', component:WorkServecesSectionsComponent},
   {path:'workServicesType', component:WorkServecesTypeComponent},
   {path:'workServicesCategory', component:WorkServecesCategoryComponent},
-  {path:'documentOperations' , component:DocumentOperationsComponent}
+  {path:'documentOperations' , component:DocumentOperationsComponent},
+  
 ];
 
 @NgModule({

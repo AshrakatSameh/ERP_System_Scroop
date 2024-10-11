@@ -36,6 +36,7 @@ import { BoxAndCommitmentComponent } from './components/sales/salesResponsible/b
 import { ContactsComponent } from './components/sales/clients/contacts/contacts.component';
 import { BranchesAndLocationsComponent } from './components/sales/clients/branches-and-locations/branches-and-locations.component';
 import { ClientsComponent } from './components/sales/clients/clients/clients.component';
+import { UnitCategoryComponent } from './components/stock/stock/unit-category/unit-category.component';
 import { WorkServecesReqsComponent } from './components/workServeces/work-service-Reqs/work-serveces-reqs/work-serveces-reqs.component';
 import { WorkServecesSectionsComponent } from './components/workServeces/work-services-sections/work-serveces-sections/work-serveces-sections.component';
 import { WorkServecesTypeComponent } from './components/workServeces/Work-services-type/work-serveces-type/work-serveces-type.component';
@@ -45,6 +46,15 @@ import { DocumentOperationsComponent } from './components/workServeces/DocumentO
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 
+import { UnitComponent } from './components/stock/stock/unit/unit.component';
+import { TypeCategoryComponent } from './components/stock/categories/type-category/type-category.component';
+import { BrandsComponent } from './components/stock/categories/brands/brands.component';
+import { CategoryGroupComponent } from './components/stock/categories/category-group/category-group.component';
+import { ItemTypeComponent } from './components/stock/categories/item-type/item-type.component';
+import { StorehouseCategoryComponent } from './components/stock/storehouse/storehouse-category/storehouse-category.component';
+import { StorehouseComponent } from './components/stock/storehouse/storehouse/storehouse.component';
+import { StorageComponent } from './components/stock/storehouse/storage/storage.component';
+import { StorehouseTransportationComponent } from './components/stock/storehouse/storehouse-transportation/storehouse-transportation.component';
 
 @NgModule({
   declarations: [
@@ -77,10 +87,21 @@ import { LoginComponent } from './components/login/login.component';
     ContactsComponent,
     BranchesAndLocationsComponent,
     ClientsComponent,
+    UnitCategoryComponent,
     WorkServecesReqsComponent,
     WorkServecesSectionsComponent,
     WorkServecesTypeComponent,
     WorkServecesCategoryComponent,
+    DocumentOperationsComponent,
+    UnitComponent,
+    TypeCategoryComponent,
+    BrandsComponent,
+    CategoryGroupComponent,
+    ItemTypeComponent,
+    StorehouseCategoryComponent,
+    StorehouseComponent,
+    StorageComponent,
+    StorehouseTransportationComponent,
     DocumentOperationsComponent,
     LoginComponent,
     
