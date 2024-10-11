@@ -209,153 +209,161 @@
               </ul>
             </div>
           </li>
-          
-          <li class="nav-item">
-            <!-- Main Projects and Contracts Menu -->
-            <a data-bs-toggle="collapse" href="#mainMenu" role="button" aria-expanded="false" aria-controls="mainMenu">
+          <!-- <li class="nav-item">
+            <a data-bs-toggle="collapse" href="#maps">
               <i class="fas fa-map-marker-alt"></i>
-              <p>المشاريع والعقود</p>
-              <span class="caret"></span>        
-            </a>
-          
-            <!-- Main Collapsible Menu -->
-            <div class="collapse" id="mainMenu">
-              <ul class="nav flex-column ms-3">
-                <!-- Projects Submenu -->
-                <li class="nav-item">
-                  <a data-bs-toggle="collapse" href="#projectsSubmenu" role="button" aria-expanded="false" aria-controls="projectsSubmenu">
-                    المشاريع
-                    <span class="caret"></span>
-                  </a>
-          
-                  <div class="collapse" id="projectsSubmenu">
-                    <ul class="nav flex-column ms-3">
-                      <li class="nav-item">
-                        <a class="nav-link" routerLink="/projects">المشاريع</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" routerLink="/projectType">نوع المشاريع</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-          
-                <!-- Contracts Submenu -->
-                <li class="nav-item">
-                  <a data-bs-toggle="collapse" href="#contractSubmenu" role="button" aria-expanded="false" aria-controls="contractSubmenu">
-                    العقود
-                    <span class="caret"></span>
-                  </a>
-          
-                  <div class="collapse" id="contractSubmenu">
-                    <ul class="nav flex-column ms-3">
-                      <li class="nav-item">
-                        <a class="nav-link" routerLink="/contracts">العقود</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" routerLink="/contractsType">نوع العقود</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-          
-          
-
-
-          <li class="nav-item">
-            <a data-bs-toggle="collapse" href="#charts">
-              <i class="far fa-chart-bar"></i>
-              <p>المخزون</p>
+              <p>Maps</p>
               <span class="caret"></span>
             </a>
-            <div class="collapse" id="charts">
+            <div class="collapse" id="maps">
               <ul class="nav nav-collapse">
-                <li><a href="charts/charts.html">
-                    <span class="sub-item">الوحده</span></a>
-                </li>
                 <li>
-                  <a href="charts/sparkline.html">
-                    <span class="sub-item">الأصناف</span>
+                  <a href="maps/googlemaps.html">
+                    <span class="sub-item">Google Maps</span>
                   </a>
                 </li>
-                <li><a href="charts/charts.html">
-                  <span class="sub-item">المستودعات</span></a>
-              </li>
-              <li><a href="charts/charts.html">
-                <span class="sub-item">الأعدادات</span></a>
-            </li>
+                <li>
+                  <a href="maps/jsvectormap.html">
+                    <span class="sub-item">Jsvectormap</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </li> -->
           <li class="nav-item">
-            <a href="widgets.html">
-              <i class="fas fa-desktop"></i>
-              <p>Widgets</p>
-              <span class="badge badge-success">4</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="../../documentation/index.html">
-              <i class="fas fa-file"></i>
-              <p>Documentation</p>
-              <span class="badge badge-secondary">1</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a data-bs-toggle="collapse" href="#submenu">
-              <i class="fas fa-bars"></i>
-              <p>Menu Levels</p>
+            <a data-bs-toggle="collapse" href="#inventoryCollapse">
+              <i class="fas fa-layer-group"></i>
+              <p>المخزون</p>
               <span class="caret"></span>
             </a>
-            <div class="collapse" id="submenu">
-              <ul class="nav nav-collapse">
-                <li>
-                  <a data-bs-toggle="collapse" href="#subnav1">
-                    <span class="sub-item">Level 1</span>
-                    <span class="caret"></span>
+            <div class="collapse" id="inventoryCollapse">
+              <ul class="nav nav-collapse p-0 no-bullets">
+                <!-- Units -->
+                <li class="collapsed-item">
+                  <a (click)="toggleCollapse2('warehouseMovementSub')" aria-expanded="false" aria-controls="warehouseMovementSub">
+                    <span class="toggle-icon">{{ isCollapsed2['warehouseMovementSub'] ? '+' : '-' }}</span>
+                    <span class="sub-item">الوحدة</span>
                   </a>
-                  <div class="collapse" id="subnav1">
-                    <ul class="nav nav-collapse subnav">
-                      <li>
-                        <a href="#">
-                          <span class="sub-item">Level 2</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <span class="sub-item">Level 2</span>
-                        </a>
-                      </li>
+                  <div [ngClass]="{'collapse': isCollapsed2['warehouseMovementSub']}" id="warehouseMovementSub">
+                    <ul class="nav nav-collapse sub-nav">
+                      <li><a routerLink="/"><span class="sub-item">فئات الوحدة</span></a></li>
+                      <li><a routerLink="/"><span class="sub-item">الوحدة</span></a></li>
                     </ul>
                   </div>
                 </li>
-                <li>
-                  <a data-bs-toggle="collapse" href="#subnav2">
-                    <span class="sub-item">Level 1</span>
-                    <span class="caret"></span>
+          
+                <!-- types -->
+                <li class="collapsed-item">
+                  <a (click)="toggleCollapse2('warehouseManagersSub')" aria-expanded="false" aria-controls="warehouseManagersSub">
+                    <span class="toggle-icon">{{ isCollapsed2['warehouseManagersSub'] ? '+' : '-' }}</span>
+                    <span class="sub-item">الأصناف</span>
                   </a>
-                  <div class="collapse" id="subnav2">
-                    <ul class="nav nav-collapse subnav">
-                      <li>
-                        <a href="#">
-                          <span class="sub-item">Level 2</span>
-                        </a>
-                      </li>
+                  <div [ngClass]="{'collapse': isCollapsed2['warehouseManagersSub']}" id="warehouseManagersSub">
+                    <ul class="nav nav-collapse sub-nav">
+                      <li><a href="#"><span class="sub-item">فئة الصنف</span></a></li>
+                      <li><a href="#"><span class="sub-item">الأصناف</span></a></li>
+                      <li><a href="#"><span class="sub-item">الماركات</span></a></li>
+                      <li><a routerLink="/boxAndCommitment"><span class="sub-item">مجموعة الصنف</span></a></li>
+                      <li><a href="#"><span class="sub-item">نوع الصنف</span></a></li>
+                      <li><a href="#"><span class="sub-item">حركة المخزن</span></a></li>
                     </ul>
                   </div>
                 </li>
-                <li>
-                  <a href="#">
-                    <span class="sub-item">Level 1</span>
+          
+                <!-- Clients -->
+                <li class="collapsed-item">
+                  <a (click)="toggleCollapse2('typeSub')" aria-expanded="false" aria-controls="typeSub">
+                    <span class="toggle-icon">{{ isCollapsed2['typeSub'] ? '+' : '-' }}</span>
+                    <span class="sub-item">المستودعات</span>
                   </a>
+                  <div [ngClass]="{'collapse': isCollapsed2['typeSub']}" id="typeSub">
+                    <ul class="nav nav-collapse sub-nav">
+                      <li><a routerLink=""><span class="sub-item">فئة المستودعات</span></a></li>
+                      <li><a routerLink=""><span class="sub-item">المستودعات</span></a></li>
+                      <li><a routerLink="#"><span class="sub-item">أماكن التخزين</span></a></li>
+                      <li><a routerLink="/"><span class="sub-item">النقل بين المستودعات</span></a></li>
+                      <li><a routerLink="/"><span class="sub-item">جرد المستودع</span></a></li>
+                      <li><a routerLink="/"><span class="sub-item">تقارير المستودعات</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+          
+                <!-- Settings -->
+                <li class="collapsed-item">
+                  <a (click)="toggleCollapse2('settingsSub2')" aria-expanded="false" aria-controls="settingsSub2">
+                    <span class="toggle-icon">{{ isCollapsed2['settingsSub2'] ? '+' : '-' }}</span>
+                    <span class="sub-item">اعدادات</span>
+                  </a>
+                  <div [ngClass]="{'collapse': isCollapsed2['settingsSub2']}" id="settingsSub2">
+                    <ul class="nav nav-collapse sub-nav">
+                      <li><a href="#">اعدادات عامة</a></li>
+                      <li><a href="#">اعدادات الخصوصية</a></li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
             </div>
           </li>
+          
+
+          <li class="nav-item">
+            <a data-bs-toggle="collapse" href="#mainMenu">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>المشاريع والعقود</p>
+              <span class="caret"></span>
+            </a>
+            <div class="collapse" id="mainMenu">
+              <ul class="nav nav-collapse p-0">
+                <li class="collapsed-item">
+                  <a (click)="toggleCollapse('projectsMovementSub')" aria-controls="projectsMovementSub">
+                    <span class="toggle-icon">{{ isCollapsed['projectsMovementSub'] ? '+' : '-' }}</span>
+                    <span class="sub-item">المشاريع</span>
+                  </a>
+                  <div [ngClass]="{'collapse': isCollapsed['projectsMovementSub']}" id="projectsMovementSub">
+                    <ul class="nav nav-collapse sub-nav">
+                      <li><a routerLink="/"><span class="sub-item">المشاريع</span></a></li>
+                      <li><a routerLink="/"><span class="sub-item">نوع المشاريع</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="collapsed-item">
+                  <a (click)="toggleCollapse('contractsMovementSub')" aria-controls="contractsMovementSub">
+                    <span class="toggle-icon">{{ isCollapsed['contractsMovementSub'] ? '+' : '-' }}</span>
+                    <span class="sub-item">العقود</span>
+                  </a>
+                  <div [ngClass]="{'collapse': isCollapsed['contractsMovementSub']}" id="contractsMovementSub">
+                    <ul class="nav nav-collapse sub-nav">
+                      <li><a routerLink="/"><span class="sub-item">العقود</span></a></li>
+                      <li><a routerLink="/"><span class="sub-item">نوع العقود</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a>
+                    <span class="sub-item">المهام</span></a>
+                </li>
+                <li><a>
+                    <span class="sub-item">الموقع وجهات الإتصال</span></a>
+                </li>
+                <li><a>
+                    <span class="sub-item">المعدات</span></a>
+                </li>
+                <li><a>
+                    <span class="sub-item">تقارير المشاريع والعقود</span></a>
+                </li>
+                <li><a>
+                    <span class="sub-item">اعدادات المشاريع والعقود</span></a>
+                </li>
+              </ul>
+            </div>
+  
+          </li>
+        
+       
+       
         </ul>
       </div>
     </div>
   </div>
+
+
+  <button type="button" class="btn btn-primary" (click)="logout()">LOGOUT</button>

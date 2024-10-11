@@ -9,7 +9,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 import {TranslateModule, TranslateLoader} from "@ngx-translate/core";
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { StaffComponent } from './components/staff/staff.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { ReceivedCovenantComponent } from './components/staff/received-covenant/received-covenant.component'
@@ -42,6 +42,9 @@ import { WorkServecesTypeComponent } from './components/workServeces/Work-servic
 import { WorkServecesCategoryComponent } from './components/workServeces/work-serveces-category/work-serveces-category.component';
 import { CommonModule } from '@angular/common';
 import { DocumentOperationsComponent } from './components/workServeces/DocumentOperations/document-operations/document-operations.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -78,13 +81,18 @@ import { DocumentOperationsComponent } from './components/workServeces/DocumentO
     WorkServecesSectionsComponent,
     WorkServecesTypeComponent,
     WorkServecesCategoryComponent,
-    DocumentOperationsComponent
+    DocumentOperationsComponent,
+    LoginComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     // TranslateModule.forRoot({
     //   defaultLanguage: 'ar',
 

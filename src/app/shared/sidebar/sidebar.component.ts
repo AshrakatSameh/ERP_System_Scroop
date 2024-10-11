@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,17 +8,30 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
+  constructor(private authService: AuthService) {}
 
-  // isCollapsedIcone: boolean = false;
-  // isCollapsedProjects: boolean = false;
+  logout() {
+    const tenant = localStorage.getItem('tenant');
+    localStorage.clear;
+    if (tenant) {
+      this.authService.logout(tenant).subscribe(
+        (response) => {
+          console.log('Logged out successfully', response);
+          // Perform any additional actions on successful logout
+        },
+        (error) => {
+          console.error('Logout failed', error);
+          // Handle error case
+        }
+      );
+    } else {
+      console.warn('No tenant found in local storage');
+    }};
 
-  // toggleIcon() {
-  //   this.isCollapsedIcone = !this.isCollapsedIcone;
-  // }
-  
-  // toggleProjectsIcon() {
-  //   this.isCollapsedProjects = !this.isCollapsedProjects;
-  // }
+
+
+
+
 
    // Define the object with string indexing
    isCollapsed: { [key: string]: boolean } = {
@@ -26,29 +40,15 @@ export class SidebarComponent {
     clientsSub: true,
     salesReportsSub: true,
     settingsSub: true,
-
-
-    //projects toggle
-
-    projectsMovementSub :true,
-    contractsMovementSub:true,
-
-    // for warehouse
+  };
+  
+  isCollapsed2: { [key: string]: boolean } = {
     warehouseMovementSub: true,
     warehouseManagersSub: true,
     typeSub: true,
     warehouseReportsSub: true,
     settingsSub2: true,
-   
   };
-  
-  // isCollapsed2: { [key: string]: boolean } = {
-  //   warehouseMovementSub: true,
-  //   warehouseManagersSub: true,
-  //   typeSub: true,
-  //   warehouseReportsSub: true,
-  //   settingsSub2: true,
-  // };
 
   openSubmenus: { [key: string]: boolean } = {};
 
@@ -75,9 +75,11 @@ export class SidebarComponent {
 
 
   
-  // toggleCollapse2(section: string) {
-  //   this.isCollapsed2[section] = !this.isCollapsed2[section];
-  // }
+  toggleCollapse2(section: string) {
+    this.isCollapsed2[section] = !this.isCollapsed2[section];
+  }
 
+
+  
 
 }

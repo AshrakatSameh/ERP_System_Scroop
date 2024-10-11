@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmployeeService } from 'src/app/services/getAllServices/Employee/employee.service';
 
 @Component({
   selector: 'app-staff',
@@ -15,4 +16,21 @@ export class StaffComponent {
   showContent(index: number): void {
     this.selectedButton = index;
   }
+
+
+  employees:any[] =[];
+
+  constructor(private employeeService: EmployeeService){}
+  ngOnInit(): void {
+    // Fetch UserWarehouses when the component initializes
+    this.employeeService.getAllEmployees().subscribe(
+     (response) => {
+       this.employees = response; // Assign the fetched Warehouses
+       console.log('employee:', this.employees);
+     },
+     (error) => {
+       console.error('Error fetching Warehouses:', error); // Handle errors
+     }
+   );
+}
 }
